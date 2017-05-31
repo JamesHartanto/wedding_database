@@ -8,10 +8,10 @@ import java.math.BigDecimal;
 public class Gifts {
     private Integer id;
     private String name;
-    private BigDecimal cost;
+    private String cost;
     private String buyer;
 
-    public Gifts(Integer id, String name, BigDecimal cost, String buyer) {
+    public Gifts(Integer id, String name, String cost, String buyer) {
         this.id = id;
         this.name = name;
         this.cost = cost;
@@ -34,11 +34,11 @@ public class Gifts {
         this.name = name;
     }
 
-    public BigDecimal getCost() {
+    public String getCost() {
         return cost;
     }
 
-    public void setCost(BigDecimal cost) {
+    public void setCost(String cost) {
         this.cost = cost;
     }
 
