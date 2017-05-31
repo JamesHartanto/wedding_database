@@ -124,6 +124,12 @@
             <!--</div>-->
         <!--</div>-->
 
+        <form action="gifts.html" id="searchbar" th:action="@{/gifts}" method="get">
+            <label for="search">Search for a name:</label>
+            <input type="search" name="search" id="search" value="" placeholder="For Steven and Nancy" th:value="${search}"/>
+            <input type="submit" name="submit" value="Search!" />
+        </form>
+
         <table th:if="${empty} != 0">
             <tr>
                 <th>Name</th>
