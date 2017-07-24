@@ -4,14 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-body {
-    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    /*background: url('../img/NS_background.JPG') no-repeat center center fixed;*/
+header{
     background: url(https://d3t14gfu9ehll4.cloudfront.net/themes/08edfb0f-e265-47ba-a5a3-1cfbc4dff03a/undefined_vS8h7iw.png);
     background-position: center top, left top;
     background-repeat: no-repeat;
     background-size: 800px auto;
+}
 
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #666666;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -177,7 +178,6 @@ footer p {
 
     .navbar-nav>li>a {
         line-height: normal;
-
     }
 
     .navbar-nav {
