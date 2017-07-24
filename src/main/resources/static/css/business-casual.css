@@ -43,6 +43,16 @@ hr {
     border-color: #999999;
 }
 
+.namefont {
+    font-family: 'Meddon', cursive;
+    font-size: 50px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-transform: initial;
+    /*font-variant: none;*/
+    /*-webkit-font-smoothing: antialiased;*/
+}
+
 .brand,
 .address-bar {
     display: none;
