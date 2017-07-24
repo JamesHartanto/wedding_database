@@ -33,6 +33,13 @@
     <style>
         .indented { padding-left: 50pt; padding-right: 50pt; }
         body {background-image: url("../static/img/NS_background.JPG")}
+        #hide{position: fixed;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            background-color: #666666;
+            z-index: 99;}
     </style>
 
 </head>
@@ -45,8 +52,7 @@
 
 <body>
 
-<!--<div class="brand">Nancy & Steven</div>-->
-<!--<div class="address-bar">1 Monarch Beach Resort | Dana Point, CA 92629 | 949.234.3200</div>-->
+<div style="display: none" id="hide"></div>
 
 <!-- Navigation -->
 <nav class="navbar navbar-default" role="navigation">
@@ -114,6 +120,13 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+
+<!--for the page to complete loading-->
+<script type="text/javascript">
+    document.getElementById("hide").style.display = "block";
+    window.onload = function()
+    { document.getElementById("hide").style.display = "none"; }
+</script>
 
 </body>
 
