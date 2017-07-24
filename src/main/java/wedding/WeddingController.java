@@ -17,21 +17,35 @@ public class WeddingController {
     @Autowired
     WeddingRepository weddingRepository;
 
-    @RequestMapping("/")
+    // homepage
+    @RequestMapping("/home")
     public String homePage(){
-        return "index";
+        return "home";
     }
 
-    @RequestMapping("directions")
-    public String directions(){
-        return "directions";
+    // bride and groom story
+    @RequestMapping("/")
+    public String index(){return "index";}
+
+    // bridesmaids and groomsmen
+    @RequestMapping("/entourage")
+    public String entourage(){
+        return "entourage";
     }
 
-    @RequestMapping("about")
-    public String about(){
-        return "about";
+    // form for users to fill
+    @RequestMapping("/rsvp")
+    public String rsvp(){
+        return "rsvp";
     }
 
+    // photos of engagement
+    @RequestMapping("/photos")
+    public String photos(){
+        return "photos";
+    }
+
+    // not sure yet... will complete later once gifts are ready
     @RequestMapping("/gifts")
     public String gifts(Model model, @RequestParam(defaultValue = "") String search){
 
@@ -49,5 +63,11 @@ public class WeddingController {
         model.addAttribute("listOfGifts",listOfGifts);
 
         return "gifts";
+    }
+
+    // travel stuff -- where to stay, dining, things to do
+    @RequestMapping("/directions")
+    public String directions(){
+        return "directions";
     }
 }

@@ -6,7 +6,13 @@
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/NS_background.JPG') no-repeat center center fixed;
+    /*background: url('../img/NS_background.JPG') no-repeat center center fixed;*/
+    background: url(https://d3t14gfu9ehll4.cloudfront.net/themes/08edfb0f-e265-47ba-a5a3-1cfbc4dff03a/undefined_vS8h7iw.png);
+    background-position: center top, left top;
+    background-repeat: no-repeat;
+    background-size: 800px auto;
+
+    background-color: #666666;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -50,7 +56,7 @@ hr {
 .navbar-nav {
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .img-full {
@@ -162,16 +168,16 @@ footer p {
 
     .navbar-default {
         border: none;
-        background: #fff;
-        background: rgba(255,255,255,0.9);
+        background: white;
     }
 
     .nav>li>a {
-        padding: 35px;
+        padding: 15px;
     }
 
     .navbar-nav>li>a {
         line-height: normal;
+
     }
 
     .navbar-nav {
@@ -179,7 +185,7 @@ footer p {
         float: none;
         margin: 0 auto;
         table-layout: fixed;
-        font-size: 1.25em;
+        font-size: 1em;
     }
 }
 
