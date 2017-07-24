@@ -3,9 +3,12 @@ package wedding;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,6 +19,24 @@ public class WeddingController {
 
     @Autowired
     WeddingRepository weddingRepository;
+
+    // VERIFICATION TO AVOID TROLLS
+    // names
+    public List<String> nameList(){
+        List<String> names = new ArrayList<>();
+        for (int x = 0; x < weddingRepository.listGuests().size(); x = x + 1){
+            names.add(weddingRepository.listGuests().get(x).getName());
+        }
+        return names;
+    }
+    // email
+    public List<String> emailList(){
+        List<String> names = new ArrayList<>();
+        for (int x = 0; x < weddingRepository.listGuests().size(); x = x + 1){
+            names.add(weddingRepository.listGuests().get(x).getEmail());
+        }
+        return names;
+    }
 
     // homepage
     @RequestMapping("/home")
@@ -34,9 +55,19 @@ public class WeddingController {
     }
 
     // form for users to fill
-    @RequestMapping("/rsvp")
+    @GetMapping("/rsvp")
     public String rsvp(){
         return "rsvp";
+    }
+
+    @PostMapping("/rsvpValidation")
+    public String rsvpValidation(Model model, String name, String email, String name1){
+        if(nameList().contains(name) && emailList().contains(email)) {
+            model.addAttribute("success", true);
+        } else{
+            model.addAttribute("success",false);
+        }
+        return "redirect:/home";
     }
 
     // photos of engagement
