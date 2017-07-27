@@ -29,7 +29,14 @@
     <script src="../static/https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <style> .indented { padding-left: 50pt; padding-right: 50pt; } </style>
+    <style>
+        .indented { padding-left: 50pt; padding-right: 50pt; }
+        .grid {margin-left: -15px; margin-right: -15px;}
+        .grid-item{margin-bottom: 4px;}
+        .grid-item img {display:block; max-width: 100%;}
+        .img-responsive{width:100%;height:auto;}
+        .img{vertical-align: middle;border:0;border-color:white;}
+    </style>
 
 </head>
 
@@ -89,12 +96,32 @@
     <!--/.container -->
 </nav>
 
-<br />
-<br />
-
-<form action="rsvp.html" method="post">
-
-</form>
+<div class="grid row" id="grid" style="position: relative; height: 5097.5px">
+    <!--PICTURE 1-->
+    <div class="grid-item col-xs-6 col-md-6" style="position:absolute;left:0%;top:0px;">
+        <div class="grid-item-content">
+            <img src="../static/img/slide-1.jpg" class="gallery-img img-responsive"/>
+        </div>
+    </div>
+    <!--PICTURE 2-->
+    <div class="grid-item col-xs-6 col-md-6" style="position:absolute;left:49.7333%;top:0px;">
+        <div class="grid-item-content">
+            <img src="../static/img/slide-1.jpg" class="gallery-img img-responsive"/>
+        </div>
+    </div>
+    <!--PICTURE 3-->
+    <div class="grid-item col-xs-6 col-md-6" style="position:absolute;left:0%;top:520px;">
+        <div class="grid-item-content">
+            <img src="../static/img/slide-1.jpg" class="gallery-img img-responsive"/>
+        </div>
+    </div>
+    <!--PICTURE 4-->
+    <div class="grid-item col-xs-6 col-md-6" style="position:absolute;left:49.7333%;top:520px;">
+        <div class="grid-item-content">
+            <img src="../static/img/slide-1.jpg" class="gallery-img img-responsive"/>
+        </div>
+    </div>
+</div>
 
 <!--jQuery -->
 <script src="../static/js/jquery.js" th:src="@{/js/jquery.js}"></script>
