@@ -61,10 +61,19 @@ public class WeddingController {
     }
 
     @PostMapping("/rsvpValidation")
-    public String rsvpValidation(Model model, String name, String email, String name1){
+    public String rsvpValidation(Model model, String name, String email, boolean attending, String food, boolean plus1, String name1, String food1){
         if(nameList().contains(name) && emailList().contains(email)) {
+            // passes the lame validation
             model.addAttribute("success", true);
+            // to avoid null values
+            if(!plus1){
+                name1 = "";
+                food1 = "";
+            }
+            // adding it to the database
+            weddingRepository.addGuest(name,email,attending, food, new Guest(name1,food1));
         } else{
+            // failed to pass validation!
             model.addAttribute("success",false);
         }
         return "redirect:/home";

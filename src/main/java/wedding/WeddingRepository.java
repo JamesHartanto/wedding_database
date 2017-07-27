@@ -47,4 +47,9 @@ public class WeddingRepository {
     }
 
 
+    public void addGuest(String name, String email, boolean attending, String foodPreference, Guest plus1) {
+        jdbcTemplate.update("INSERT INTO guestinfo(name,email,attending,food,guestname,guestfood) VALUES(?,?,?,?,?,?)",
+                new Object[]{name, email, attending, foodPreference, plus1.getName(),plus1.getFoodPreference()});
+    }
+
 }
