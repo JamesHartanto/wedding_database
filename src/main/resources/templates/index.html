@@ -81,10 +81,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="home.html" th:href="@{/}">HELLO</a>
+                    <a href="home.html" th:href="@{/home}">HELLO</a>
                 </li>
                 <li>
-                    <a href="index.html" th:href="@{/stories}">OUR STORY</a>
+                    <a href="index.html" th:href="@{/}">OUR STORY</a>
                 </li>
                 <li>
                     <a href="entourage.html" th:href="@{/entourage}">ENTOURAGE</a>
@@ -110,33 +110,29 @@
 
 <section class="main bg_theme_img" role="region">
     <div id="couple-container" class="full-splash container flex-container">
-        <div class="col-xs-12 remove-padding-l remove-padding-r ">
-            <!--LEFT-->
-            <div class="left-btn col-xs-1">
-                <button id="scroll-left" class="scroll-left col-xs-1 trans disabled"></button>
-            </div>
-            <!--MAIN CONTENT-->
-            <div id="couple" class="col-xs-10">
-                <!--NAVIGATION BAR -->
-                <nav class="sub-nav" role="navigation">
-                    <img id="pic-1" src="../static/img/slide-1.jpg" style="width: 65px" />
-                    <img id="pic-2" src="../static/img/slide-2.jpg" style="width: 65px" />
-                    <img id="pic-3" src="../static/img/slide-3.jpg" style="width: 65px" />
-                </nav>
+        <!--MAIN CONTENT-->
+        <div id="couple" class="col-xs-10">
+            <!--NAVIGATION BAR -->
+            <nav id="sub-nav" class="sub-nav" role="navigation">
+                <img id="nav-pic-1" src="../static/img/slide-1.jpg" style="width: 65px" />
+                <img id="nav-pic-2" src="../static/img/slide-2.jpg" style="width: 65px" />
+                <img id="nav-pic-3" src="../static/img/slide-3.jpg" style="width: 65px" />
+            </nav>
 
-                <!--THE REAL MAIN CONTENT-->
-                <div id="couple-stories">
-                    <!--THE FIRST IMAGE-->
-                    <div id="story1">
-                        <div class="row">
-
-                        </div>
-                    </div>
+            <!--THE REAL MAIN CONTENT-->
+            <div id="couple-stories">
+                <!--THE FIRST IMAGE-->
+                <div id="story1" style="position:absolute">Hello1
+                    <h2>Testing1</h2>
                 </div>
-            </div>
-            <!--RIGHT-->
-            <div class="right-btn col-xs-1">
-                <button id="scroll-right" class="scroll-right col-xs-1 trans"></button>
+                <!--THE SECOND IMAGE-->
+                <div id="story2" style="position:absolute; visibility: hidden;">Hello2
+                        <h2>Testing2</h2>
+                </div>
+                <!--THE THIRD IMAGE-->
+                <div id="story3" style="position:absolute; visibility: hidden;">Hello3
+                        <h2>Testing3</h2>
+                </div>
             </div>
         </div>
     </div>
@@ -191,7 +187,6 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
 
-<!--slider-->
 <script src="../static/js/cycle.js" th:src="@{js/cycle.js}"></script>
 
 </body>
