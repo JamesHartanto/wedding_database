@@ -89,18 +89,18 @@ public class WeddingController {
     @RequestMapping("/gifts")
     public String gifts(Model model, @RequestParam(defaultValue = "") String search){
 
-        // Getting data from database
-        List<Gifts> listOfGifts = weddingRepository.listGifts(search);
-
-        // If there are no results
-        if (listOfGifts.size() == 0){
-            model.addAttribute("empty",0);
-            return "gifts";
-        }
-
-        // return data for non-empty table
-        model.addAttribute("empty",1);
-        model.addAttribute("listOfGifts",listOfGifts);
+//        // Getting data from database
+//        List<Gifts> listOfGifts = weddingRepository.listGifts(search);
+//
+//        // If there are no results
+//        if (listOfGifts.size() == 0){
+//            model.addAttribute("empty",0);
+//            return "gifts";
+//        }
+//
+//        // return data for non-empty table
+//        model.addAttribute("empty",1);
+//        model.addAttribute("listOfGifts",listOfGifts);
 
         return "gifts";
     }
