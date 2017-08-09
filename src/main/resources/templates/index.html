@@ -49,9 +49,10 @@
     <br/>
     <br/>
 </header>
-<!--th:style="'background-image: url('/static/img/NS_background.JPG');"-->
-<body style="background-image: url(../static/img/NS_background.JPG);">
 
+<body th:style="'background-image: url('+ @{/img/NS_background.JPG} + ');'">
+
+<!--To load the whole screen in one go!-->
 <div style="display: none" id="hide"></div>
 
 <!-- Navigation -->
