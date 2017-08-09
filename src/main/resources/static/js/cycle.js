@@ -29,22 +29,3 @@ function navpicture3() {
     story2.style.visibility = "hidden";
     story3.style.visibility = "visible";
 }
-
-// $(document).ready(function(){
-//     $("#nav-pic-1").click(function(){
-//         $("#story1").show();
-//         $("#story2").hide();
-//         $("#story3").hide();
-//     });
-//     $("#nav-pic-2").click(function(){
-//         $("#story1").hide();
-//         $("#story2").show();
-//         $("#story3").hide();
-//     });
-//     $("#nav-pic-3").click(function(){
-//         $("#story1").hide();
-//         $("#story2").hide();
-//         $("#story3").show();
-//     });
-// });
-

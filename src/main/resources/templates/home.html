@@ -52,6 +52,21 @@
             margin: 0;
         }
 
+        /*maybe some animation?*/
+        #story1 {
+            animation: balloon .5s ease; }
+        #story2 {
+            animation: balloon .5s ease; }
+        #story3 {
+            animation: balloon .5s ease; }
+
+        @keyframes balloon {
+            0% {
+                transform: scale(0); }
+            100% {
+                transform: scale(1); } }
+
+
     </style>
 </head>
 
@@ -114,15 +129,17 @@
         <div id="couple" class="col-xs-10">
             <!--NAVIGATION BAR -->
             <nav id="sub-nav" class="sub-nav" role="navigation">
-                <img id="nav-pic-1" src="../static/img/slide-1.jpg" style="width: 65px" />
-                <img id="nav-pic-2" src="../static/img/slide-2.jpg" style="width: 65px" />
-                <img id="nav-pic-3" src="../static/img/slide-3.jpg" style="width: 65px" />
+                <img id="nav-pic-1" src="../static/img/slide-1.jpg" th:src="@{/img/slide-1.jpg}" style="width: 65px" />
+                <img id="nav-pic-2" src="../static/img/slide-2.jpg" th:src="@{/img/slide-2.jpg}" style="width: 65px" />
+                <img id="nav-pic-3" src="../static/img/slide-3.jpg" th:src="@{/img/slide-3.jpg}" style="width: 65px" />
             </nav>
 
             <!--THE REAL MAIN CONTENT-->
             <div id="couple-stories">
+                <br />
                 <!--THE FIRST IMAGE-->
-                <div id="story1" style="position:absolute">Hello1
+                <div id="story1" style="position:absolute">
+                    <img id="pic-1" src="../static/img/slide-1.jpg" th:src="@{/img/slide-1.jpg}" />
                     <h2>Testing1</h2>
                 </div>
                 <!--THE SECOND IMAGE-->
