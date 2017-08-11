@@ -88,84 +88,37 @@
     </nav>
 
     <div class="container">
+        <br />
+        <br />
+        <h1>Will be available soon...</h1>
 
-        <!--<div class="row">-->
-            <!--<div class="box">-->
-                <!--<div class="col-lg-12">-->
-                    <!--<hr>-->
-                    <!--<h2 class="intro-text text-center">Contribute to our-->
-                        <!--<strong>Future</strong>-->
-                    <!--</h2>-->
-                    <!--<hr>-->
-                <!--</div>-->
-                <!--<div class="col-lg-12 text-center">-->
-                    <!--<img class="img-responsive img-border img-full" src="../static/img/slide-1.jpg" alt="">-->
-                    <!--<h2>Post Title-->
-                        <!--<br>-->
-                        <!--<small>October 13, 2013</small>-->
-                    <!--</h2>-->
-                    <!--<p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>-->
-                    <!--<a href="#" class="btn btn-default btn-lg">Read More</a>-->
-                    <!--<hr>-->
-                <!--</div>-->
-                <!--<div class="col-lg-12 text-center">-->
-                    <!--<img class="img-responsive img-border img-full" src="../static/img/slide-2.jpg" alt="">-->
-                    <!--<h2>Post Title-->
-                        <!--<br>-->
-                        <!--<small>October 13, 2013</small>-->
-                    <!--</h2>-->
-                    <!--<p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>-->
-                    <!--<a href="#" class="btn btn-default btn-lg">Read More</a>-->
-                    <!--<hr>-->
-                <!--</div>-->
-                <!--<div class="col-lg-12 text-center">-->
-                    <!--<img class="img-responsive img-border img-full" src="../static/img/slide-3.jpg" alt="">-->
-                    <!--<h2>Post Title-->
-                        <!--<br>-->
-                        <!--<small>October 13, 2013</small>-->
-                    <!--</h2>-->
-                    <!--<p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>-->
-                    <!--<a href="#" class="btn btn-default btn-lg">Read More</a>-->
-                    <!--<hr>-->
-                <!--</div>-->
-                <!--&lt;!&ndash;<div class="col-lg-12 text-center">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<ul class="pager">&ndash;&gt;-->
-                        <!--&lt;!&ndash;<li class="previous"><a href="#">&larr; Older</a>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<li class="next"><a href="#">Newer &rarr;</a>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--</div>-->
-        <!--</div>-->
+        <!--<form action="gifts.html" id="searchbar" th:action="@{/gifts}" method="get">-->
+            <!--<label for="search">Search for a name:</label>-->
+            <!--<input type="search" name="search" id="search" value="" placeholder="For Steven and Nancy" th:value="${search}"/>-->
+            <!--<input type="submit" name="submit" value="Search!" />-->
+        <!--</form>-->
 
-        <form action="gifts.html" id="searchbar" th:action="@{/gifts}" method="get">
-            <label for="search">Search for a name:</label>
-            <input type="search" name="search" id="search" value="" placeholder="For Steven and Nancy" th:value="${search}"/>
-            <input type="submit" name="submit" value="Search!" />
-        </form>
+        <!--<table th:if="${empty} != 0">-->
+            <!--<tr>-->
+                <!--<th>Name</th>-->
+                <!--<th>Cost</th>-->
+                <!--<th>Buyer</th>-->
+            <!--</tr>-->
 
-        <table th:if="${empty} != 0">
-            <tr>
-                <th>Name</th>
-                <th>Cost</th>
-                <th>Buyer</th>
-            </tr>
+            <!--<tr>-->
+                <!--<th>Name1</th>-->
+                <!--<th>Cost1</th>-->
+                <!--<th>Buyer1</th>-->
+            <!--</tr>-->
 
-            <tr>
-                <th>Name1</th>
-                <th>Cost1</th>
-                <th>Buyer1</th>
-            </tr>
+            <!--<tr th:remove="all">-->
+                <!--<th>Name2</th>-->
+                <!--<th>Cost2</th>-->
+                <!--<th>Buyer2</th>-->
+            <!--</tr>-->
+        <!--</table>-->
 
-            <tr th:remove="all">
-                <th>Name2</th>
-                <th>Cost2</th>
-                <th>Buyer2</th>
-            </tr>
-        </table>
-
-    </div>
+    <!--</div>-->
 
     <!-- jQuery -->
     <script src="../static/js/jquery.js" th:src="@{js/jquery/js}"></script>
