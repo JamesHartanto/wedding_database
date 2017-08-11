@@ -11,21 +11,39 @@ navpic2.addEventListener("click", navpicture2);
 navpic3.addEventListener("click", navpicture3);
 
 
-// The "ourCallBack()" function is called whenever our declared event listener is triggered.
+// The functions are called whenever "click" event is triggered.
 function navpicture1() {
-    story1.style.visibility = "visible";
-    story2.style.visibility = "hidden";
-    story3.style.visibility = "hidden";
+    story1.style.display = "block";
+    story2.style.display = "none";
+    story3.style.display = "none";
 }
 
 function navpicture2() {
-    story1.style.visibility = "hidden";
-    story2.style.visibility = "visible";
-    story3.style.visibility = "hidden";
+    story1.style.display = "none";
+    story2.style.display = "block";
+    story3.style.display = "none";
 }
 
 function navpicture3() {
-    story1.style.visibility = "hidden";
-    story2.style.visibility = "hidden";
-    story3.style.visibility = "visible";
+    story1.style.display = "none";
+    story2.style.display = "none";
+    story3.style.display = "block";
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1;}
+    if (n < 1) {slideIndex = x.length;}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
 }

@@ -66,6 +66,18 @@
             100% {
                 transform: scale(1); } }
 
+        .w3-display-left {
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            transform: translate(0%, -50%);
+        }
+        .w3-display-right {
+            position: absolute;
+            top: 50%;
+            right: 0%;
+            transform: translate(0%, -50%);
+        }
 
     </style>
 </head>
@@ -138,19 +150,30 @@
             <div id="couple-stories">
                 <br />
                 <!--THE FIRST IMAGE-->
-                <div id="story1" style="position:absolute">
+                <div class="mySlides" id="story1" style="position:absolute;" >
                     <img id="pic-1" src="../static/img/slide-1.jpg" th:src="@{/img/slide-1.jpg}" />
                     <h2>Testing1</h2>
                 </div>
                 <!--THE SECOND IMAGE-->
-                <div id="story2" style="position:absolute; visibility: hidden;">Hello2
+                <div class="mySlides" id="story2" style="position:absolute;">
+                    <img id="pic-2" src="../static/img/slide-2.jpg" th:src="@{/img/slide-2.jpg}" />
                     <h2>Testing2</h2>
                 </div>
                 <!--THE THIRD IMAGE-->
-                <div id="story3" style="position:absolute; visibility: hidden;">Hello3
+                <div class="mySlides" id="story3" style="position:absolute;">
+                    <img id="pic-3" src="../static/img/slide-3.jpg" th:src="@{/img/slide-3.jpg}" />
                     <h2>Testing3</h2>
                 </div>
             </div>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
         </div>
     </div>
 </section>
