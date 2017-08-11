@@ -69,13 +69,13 @@
         .w3-display-left {
             position: absolute;
             top: 50%;
-            left: 0%;
+            left: 1em;
             transform: translate(0%, -50%);
         }
         .w3-display-right {
             position: absolute;
             top: 50%;
-            right: 0%;
+            right: 1em;
             transform: translate(0%, -50%);
         }
 
@@ -135,7 +135,7 @@
     <!--/.container -->
 </nav>
 
-<section class="main bg_theme_img" role="region">
+<section class="main bg_theme_img container" style="position: relative; left:0px; top:0px; ">
     <div id="couple-container" class="full-splash container flex-container">
         <!--MAIN CONTENT-->
         <div id="couple" class="col-xs-10">
@@ -151,26 +151,21 @@
                 <br />
                 <!--THE FIRST IMAGE-->
                 <div class="mySlides" id="story1" style="position:absolute;" >
-                    <img id="pic-1" src="../static/img/slide-1.jpg" th:src="@{/img/slide-1.jpg}" />
-                    <h2>Testing1</h2>
+                    <img id="pic-1" src="../static/img/slide-1.jpg" th:src="@{/img/slide-1.jpg}" style="width: 75%"/>
+                    <div style="width: 20%; float:right">Description of Picture 1</div>
                 </div>
                 <!--THE SECOND IMAGE-->
                 <div class="mySlides" id="story2" style="position:absolute;">
-                    <img id="pic-2" src="../static/img/slide-2.jpg" th:src="@{/img/slide-2.jpg}" />
-                    <h2>Testing2</h2>
+                    <img id="pic-2" src="../static/img/slide-2.jpg" th:src="@{/img/slide-2.jpg}" style="width: 75%"/>
+                    <div style="width: 20%; float:right">Description of Picture 2</div>
                 </div>
                 <!--THE THIRD IMAGE-->
                 <div class="mySlides" id="story3" style="position:absolute;">
-                    <img id="pic-3" src="../static/img/slide-3.jpg" th:src="@{/img/slide-3.jpg}" />
-                    <h2>Testing3</h2>
+                    <img id="pic-3" src="../static/img/slide-3.jpg" th:src="@{/img/slide-3.jpg}" style="width: 75%;"/>
+                    <div style="width: 20%; float:right">Description of Picture 3</div>
                 </div>
             </div>
 
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 
