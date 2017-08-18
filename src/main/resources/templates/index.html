@@ -31,27 +31,40 @@
     <![endif]-->
 
     <style>
-        .indented { padding-left: 50pt; padding-right: 50pt; }
-        body {background-image: url("../static/img/NS_background.JPG");}
+        .indented { text-align: center; }
         #hide{position: fixed;
             left: 0px;
             right: 0px;
             top: 0px;
             bottom: 0px;
-            background-color: #666666;
+            background-color: #DCD0C0;
             z-index: 99;}
+        #index_img img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
     </style>
 
 </head>
-
-<header>
-    <br/>
-    <br/>
-    <br/>
+<header style="height: 16em">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h3 class="indented">
+        <span style="color:#49274A" class="namefont">Nancy</span> <span style="font-size: 9pt">and</span> <span style="color:#49274A" class="namefont">Steven</span>
+        <br />
+        <br />
+        February 24, 2018
+        <br/>
+    </h3>
+    <br />
 </header>
 
-<body th:style="'background-image: url('+ @{/img/NS_background.JPG} + ');'">
-
+<!--Full screen background-->
+<body>
 <!--To load the whole screen in one go!-->
 <div style="display: none" id="hide"></div>
 
@@ -100,21 +113,10 @@
     <!--/.container -->
 </nav>
 
-<br />
-<br />
+<div id="index_img" style="position:absolute; width:100%; height:100%">
+    <img src="../static/img/1homepage.jpg" th:src="@{/img/1homepage.jpg}" style="height: 40em; width: 60em;"/>
+</div>
 
-<h3 class="indented"><span style="color:#b76e79" class="namefont">Nancy</span> and <span style="color:#b76e79" class="namefont">Steven</span></h3>
-<p class="indented">
-    <i>
-        February 24, 2018
-    </i>
-</p>
-
-<p class="indented">
-    <i>
-        Los Angeles, CA
-    </i>
-</p>
 
 <!--jQuery -->
 <script src="../static/js/jquery.js" th:src="@{/js/jquery.js}"></script>

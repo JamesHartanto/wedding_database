@@ -18,6 +18,10 @@
     <!-- Custom CSS -->
     <link href="../static/css/business-casual.css" th:href="@{/css/business-casual.css}" rel="stylesheet" />
 
+    <!--Remodal-->
+    <link href="../static/css/remodal.css" th:href="@{/css/remodal.css}" rel="stylesheet" />
+    <link href="../static/css/remodal-default-theme.css" th:href="@{/css/remodal-default-theme.css}" rel="stylesheet" />
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css" />
@@ -94,7 +98,16 @@
 <br />
 <br />
 <div class="container">
-    <h1>Will be available soon...</h1>
+
+    <!-- button-->
+    <button id="rsvp-button" type="button" data-remodal-target="rsvp-modal">RSVP</button>
+
+    <div class="remodal" id="rsvp-modal" data-remodal-id="rsvp-modal">
+        <a href="#" data-remodal-action="close" class="remodal-close" ></a>
+        <h2>WHOOO!</h2>
+        <br />
+        <a href="#" data-remodal-action="cancel" class="remodal-cancel">Back!</a>
+    </div>
 
     <!--<form action="rsvp.html" th:action="@{/rsvpValidation}" method="post">-->
         <!--<div class="identity">-->
@@ -158,6 +171,9 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+
+<!--remodal-->
+<script src="../static/js/remodal.js" th:src="@{/js/remodal.js}"></script>
 
 </body>
 

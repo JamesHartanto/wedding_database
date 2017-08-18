@@ -8,12 +8,12 @@ header{
     background: url(https://d3t14gfu9ehll4.cloudfront.net/themes/08edfb0f-e265-47ba-a5a3-1cfbc4dff03a/undefined_vS8h7iw.png);
     background-position: center top, left top;
     background-repeat: no-repeat;
-    background-size: 800px auto;
+    background-size: 1200px auto;
 }
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #666666;
+    background-color: #DCD0C0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
