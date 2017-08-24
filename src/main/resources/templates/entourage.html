@@ -43,58 +43,50 @@
 </header>
 
 <body>
-
-<!--<div class="brand">Nancy & Steven</div>-->
-<!--<div class="address-bar">1 Monarch Beach Resort | Dana Point, CA 92629 | 949.234.3200</div>-->
-
-<!-- Navigation -->
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-            <a class="navbar-brand" href="index.html">Wedding Menu</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Wedding Menu</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html" th:href="@{/}">HELLO</a>
+                    </li>
+                    <li>
+                        <a href="home.html" th:href="@{/home}">OUR STORY</a>
+                    </li>
+                    <li>
+                        <a href="entourage.html" th:href="@{/entourage}">ENTOURAGE</a>
+                    </li>
+                    <li>
+                        <a href="rsvp.html" th:href="@{/rsvp}">RSVP</a>
+                    </li>
+                    <li>
+                        <a href="photos.html" th:href="@{/photos}">PHOTOS</a>
+                    </li>
+                    <li>
+                        <a href="gifts.html" th:href="@{/gifts}">GIFTS</a>
+                    </li>
+                    <li>
+                        <a href="directions.html" th:href="@{/directions}">DIRECTIONS</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="index.html" th:href="@{/}">HELLO</a>
-                </li>
-                <li>
-                    <a href="home.html" th:href="@{/home}">OUR STORY</a>
-                </li>
-                <li>
-                    <a href="entourage.html" th:href="@{/entourage}">ENTOURAGE</a>
-                </li>
-                <li>
-                    <a href="rsvp.html" th:href="@{/rsvp}">RSVP</a>
-                </li>
-                <li>
-                    <a href="photos.html" th:href="@{/photos}">PHOTOS</a>
-                </li>
-                <li>
-                    <a href="gifts.html" th:href="@{/gifts}">GIFTS</a>
-                </li>
-                <li>
-                    <a href="directions.html" th:href="@{/directions}">DIRECTIONS</a>
-                </li>
-            </ul>
-        </div>
-        <!--/.navbar-collapse -->
-    </div>
-    <!--/.container -->
-</nav>
+    </nav>
 
-<body>
-
-<div class="row">
+    <!--Main content-->
     <div class="box">
         <div class="col-lg-12">
             <hr />
@@ -120,9 +112,7 @@
         </div>
         <div class="clearfix"></div>
     </div>
-</div>
 
-<div class="row">
     <div class="box">
         <div class="col-lg-12">
             <hr />
@@ -147,7 +137,6 @@
         </div>
         <div class="clearfix"></div>
     </div>
-</div>
 
 </body>
 
