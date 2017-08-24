@@ -42,6 +42,9 @@ hr {
     max-width: 400px;
     border-color: #999999;
 }
+.otherfont{
+    font-family: 'Josefin Sans', sans-serif;
+}
 
 .namefont {
     font-family: 'Meddon', cursive;
