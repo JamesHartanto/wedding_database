@@ -242,6 +242,11 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
 
+<script>
+    $("img").on('click',function(){
+        window.open($(this).attr("src"), "_blank", "menubar=1,resizable=1");
+    });
+</script>
 </body>
 
 </html>
