@@ -97,42 +97,97 @@
     <form action="rsvp2.html" th:action="@{/rsvpValidation}" method="post">
 
         <div class="questions">
+            <!--ATTENDING-->
             <div class="row">
                 <h4>Attending?</h4>
             </div>
             <div class="answerInputs">
                 <div class="buttons" data-toggle="buttons">
-                    <button class="reply">Of Course!</button>
-                    <button class="reply">Sorry =(</button>
+                    <button class="reply">Yes</button>
+                    <button class="reply">No</button>
                 </div>
             </div>
 
+            <!--FOOD PREFERENCE-->
             <div class="row">
-                <h4>Bringing a +1?</h4>
+                <h4>Food Choice</h4>
+                <input type="radio" name="food" id="food1" value="Beef">
+                <label for="food1">Beef</label><br>
+                <input type="radio" name="food" id="food2" value="Fish">
+                <label for="food2">Fish</label><br>
+                <input type="radio" name="food" id="food3" value="Vegetarian">
+                <label for="food3">Vegetarian</label><br>
+            </div>
+
+            <!--ALLERGIES-->
+            <div class="row">
+                <h4>Allergies?</h4>
+                <input size="35em" type="text" id="allergies" title="allergies" name="allergies"/>
+            </div>
+
+            <!--GUEST RELATED-->
+            <!--BRINGING GUEST-->
+            <div class="row">
+                <h4>Bringing a Guest?</h4>
             </div>
             <div class="answerInputs">
                 <div class="buttons" data-toggle="buttons">
-                    <button class="reply">Yup</button>
-                    <button class="reply">Nope</button>
+                    <button class="reply">Yes</button>
+                    <button class="reply">No</button>
                 </div>
             </div>
 
+            <!--GUEST NAME-->
             <div class="row">
-                <h4>+1's Name</h4>
+                <h4>Guest Name</h4>
             </div>
             <div class="answerInputs">
-                <input size="35" type="text" id="1name" name="1name" />
+                <input size="35em" type="text" id="guestName" title="guestName" name="guestName" />
             </div>
 
+            <!--GUEST FOOD-->
             <div class="row">
-                <h4>Food Preference</h4>
+                <h4>Guest Food Choice</h4>
+                <input type="radio" name="guestFood" id="guestfood1" value="Beef">
+                <label for="guestfood1">Beef</label><br>
+                <input type="radio" name="guestFood" id="guestfood2" value="Fish">
+                <label for="guestfood2">Fish</label><br>
+                <input type="radio" name="guestFood" id="guestfood3" value="Vegetarian">
+                <label for="guestfood3">Vegetarian</label><br>
             </div>
 
+            <!--GUEST ALLERGIES-->
+            <div class="row">
+                <h4>Guest Allergies?</h4>
+                <input size="35em" type="text" id="guestAllergies" title="guestAllergies" name="guestAllergies"/>
+            </div>
+
+            <!--ROOM BLOCK-->
+            <div class="row">
+                <h4>Room Block?</h4>
+            </div>
+            <div class="answerInputs">
+                <div class="buttons" data-toggle="buttons">
+                    <button class="reply">Yes</button>
+                    <button class="reply">No</button>
+                </div>
+            </div>
+
+            <!--SONG SUGGESTION-->
+            <div class="row">
+                <h4>Any Song Suggestions?</h4>
+            </div>
+            <div class="answerInputs">
+                <input size="35em" type="text" id="song" title="song" name="song" />
+            </div>
+
+
+            <!--EMAIL CONFIRMATION-->
             <div class="row">
                 <h4>Your Email: </h4>
             </div>
             <div>
-                <input size="35" type="email" name="email" id="email" />
+                <input size="35em" type="email" name="email" title="email" id="email" />
             </div>
 
             <br />
