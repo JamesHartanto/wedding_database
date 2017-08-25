@@ -52,6 +52,12 @@ public class WeddingController {
         return "rsvp";
     }
 
+
+    @GetMapping("/rsvp1")
+    public String rsvp1(){
+        return "rsvp1";
+    }
+
     @PostMapping("/rsvpValidation")
     public String rsvpValidation(Model model, String name){
         if(nameList().contains(name.toLowerCase())) {
