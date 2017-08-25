@@ -3,23 +3,25 @@
 
 <head>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
 
     <title>NS Hello</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
 
     <!-- Custom CSS -->
-    <link href="../static/css/business-casual.css" th:href="@{/css/business-casual.css}" rel="stylesheet" />
+    <link href="../static/css/business-casual.css" th:href="@{/css/business-casual.css}" rel="stylesheet"/>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+          rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
+          rel="stylesheet" type="text/css"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,7 +31,7 @@
     <![endif]-->
     <style>
 
-        section.main .sub-nav{
+        section.main .sub-nav {
             position: relative;
             text-align: center;
             margin-top: 2em;
@@ -37,7 +39,7 @@
             overflow: hidden;
         }
 
-        nav{
+        nav {
             display: block;
         }
 
@@ -53,17 +55,25 @@
 
         /*maybe some animation?*/
         #story1 {
-            animation: balloon .5s ease; }
+            animation: balloon .5s ease;
+        }
+
         #story2 {
-            animation: balloon .5s ease; }
+            animation: balloon .5s ease;
+        }
+
         #story3 {
-            animation: balloon .5s ease; }
+            animation: balloon .5s ease;
+        }
 
         @keyframes balloon {
             0% {
-                transform: scale(0); }
+                transform: scale(0);
+            }
             100% {
-                transform: scale(1); } }
+                transform: scale(1);
+            }
+        }
 
         .w3-display-left {
             position: absolute;
@@ -71,6 +81,7 @@
             left: 1em;
             transform: translate(0%, -50%);
         }
+
         .w3-display-right {
             position: absolute;
             top: 50%;
@@ -95,7 +106,8 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -141,39 +153,49 @@
         <div id="couple" class="col-xs-10">
             <!--NAVIGATION BAR -->
             <nav id="sub-nav" class="sub-nav" role="navigation">
-                <img id="nav-pic-1" src="../static/img/temp/koala.jpg" th:src="@{/img/temp/koala.jpg}" style="width: 7em; height: 5em" />
-                <img id="nav-pic-2" src="../static/img/temp/random.jpeg" th:src="@{/img/temp/random.jpeg}" style="width: 7em; height: 5em" />
-                <img id="nav-pic-3" src="../static/img/temp/koala.jpg" th:src="@{/img/temp/koala.jpg}" style="width: 7em; height: 5em" />
-                <img id="nav-pic-4" src="../static/img/Story/4Fourth.jpg" th:src="@{/img/Story/4Fourth.jpg}" style="width: 7em; height: 5em" />
-                <img id="nav-pic-5" src="../static/img/Story/5Fifth.jpg" th:src="@{/img/Story/5Fifth.jpg}" style="width: 7em; height: 5em" />
+                <img id="nav-pic-1" src="../static/img/temp/koala.jpg" th:src="@{/img/temp/koala.jpg}"
+                     style="width: 7em; height: 5em"/>
+                <img id="nav-pic-2" src="../static/img/temp/random.jpeg" th:src="@{/img/temp/random.jpeg}"
+                     style="width: 7em; height: 5em"/>
+                <img id="nav-pic-3" src="../static/img/temp/koala.jpg" th:src="@{/img/temp/koala.jpg}"
+                     style="width: 7em; height: 5em"/>
+                <img id="nav-pic-4" src="../static/img/Story/4Fourth.jpg" th:src="@{/img/Story/4Fourth.jpg}"
+                     style="width: 7em; height: 5em"/>
+                <img id="nav-pic-5" src="../static/img/Story/5Fifth.jpg" th:src="@{/img/Story/5Fifth.jpg}"
+                     style="width: 7em; height: 5em"/>
             </nav>
 
             <!--THE REAL MAIN CONTENT-->
             <div id="couple-stories">
-                <br />
+                <br/>
                 <!--THE FIRST IMAGE-->
-                <div class="mySlides" id="story1" style="position:absolute;" >
-                    <img id="pic-1" src="../static/img/temp/koala.jpg" th:src="@{/img/temp/koala.jpg}" style="width: 75%"/>
+                <div class="mySlides" id="story1" style="position:absolute;">
+                    <img id="pic-1" src="../static/img/temp/koala.jpg" th:src="@{/img/temp/koala.jpg}"
+                         style="width: 75%"/>
                     <div style="width: 20%; float:right">Description of Picture 1</div>
                 </div>
                 <!--THE SECOND IMAGE-->
-                <div class="mySlides" id="story2" style="position:absolute;" >
-                    <img id="pic-2" src="../static/img/temp/random.jpeg" th:src="@{/img/temp/random.jpeg}" style="width: 75%"/>
+                <div class="mySlides" id="story2" style="position:absolute;">
+                    <img id="pic-2" src="../static/img/temp/random.jpeg" th:src="@{/img/temp/random.jpeg}"
+                         style="width: 75%"/>
                     <div style="width: 20%; float:right">Description of Picture 2</div>
                 </div>
                 <!--THE THIRD IMAGE-->
-                <div class="mySlides" id="story3" style="position:absolute;" >
-                    <img id="pic-3" src="../static/img/temp/koala.jpg" th:src="@{/img/temp/koala.jpg}" style="width: 75%"/>
+                <div class="mySlides" id="story3" style="position:absolute;">
+                    <img id="pic-3" src="../static/img/temp/koala.jpg" th:src="@{/img/temp/koala.jpg}"
+                         style="width: 75%"/>
                     <div style="width: 20%; float:right">Description of Picture 3</div>
                 </div>
                 <!--THE FOURTH IMAGE-->
                 <div class="mySlides" id="story4" style="position:absolute;">
-                    <img id="pic-4" src="../static/img/Story/4Fourth.jpg" th:src="@{/img/Story/4Fourth.jpg}" style="width: 75%"/>
+                    <img id="pic-4" src="../static/img/Story/4Fourth.jpg" th:src="@{/img/Story/4Fourth.jpg}"
+                         style="width: 75%"/>
                     <div style="width: 20%; float:right">Description of Picture 4</div>
                 </div>
                 <!--THE FIFTH IMAGE-->
                 <div class="mySlides" id="story5" style="position:absolute;">
-                    <img id="pic-5" src="../static/img/Story/5Fifth.jpg" th:src="@{/img/Story/5Fifth.jpg}" style="width: 75%;"/>
+                    <img id="pic-5" src="../static/img/Story/5Fifth.jpg" th:src="@{/img/Story/5Fifth.jpg}"
+                         style="width: 75%;"/>
                     <div style="width: 20%; float:right">Description of Picture 5</div>
                 </div>
             </div>

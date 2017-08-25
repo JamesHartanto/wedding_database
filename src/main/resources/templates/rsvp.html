@@ -3,30 +3,34 @@
 
 <head>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
 
     <title>NS Wedding</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
 
     <!-- Custom CSS -->
-    <link href="../static/css/business-casual.css" th:href="@{/css/business-casual.css}" rel="stylesheet" />
+    <link href="../static/css/business-casual.css" th:href="@{/css/business-casual.css}" rel="stylesheet"/>
 
     <!--Remodal-->
-    <link href="../static/css/remodal.css" th:href="@{/css/remodal.css}" rel="stylesheet" />
-    <link href="../static/css/remodal-default-theme.css" th:href="@{/css/remodal-default-theme.css}" rel="stylesheet" />
+    <link href="../static/css/remodal.css" th:href="@{/css/remodal.css}" rel="stylesheet"/>
+    <link href="../static/css/remodal-default-theme.css" th:href="@{/css/remodal-default-theme.css}" rel="stylesheet"/>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+          rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
+          rel="stylesheet" type="text/css"/>
 
     <style>
-        .reply { width:100px; }
+        .reply {
+            width: 100px;
+        }
     </style>
 
 </head>
@@ -48,7 +52,8 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -88,74 +93,74 @@
     <!--/.container -->
 </nav>
 
-<br />
-<br />
+<br/>
+<br/>
 <div class="container">
 
     <!-- button-->
     <button id="rsvp-button" type="button" data-remodal-target="rsvp-modal">RSVP</button>
 
     <div class="remodal" id="rsvp-modal" data-remodal-id="rsvp-modal">
-        <a href="#" data-remodal-action="close" class="remodal-close" ></a>
+        <a href="#" data-remodal-action="close" class="remodal-close"></a>
         <h2>WHOOO!</h2>
-        <br />
+        <br/>
         <a href="#" data-remodal-action="cancel" class="remodal-cancel">Back!</a>
     </div>
 
     <!--<form action="rsvp.html" th:action="@{/rsvpValidation}" method="post">-->
-        <!--<div class="identity">-->
+    <!--<div class="identity">-->
 
-            <!--<div class="row">-->
-                <!--<h4>Your Email: </h4>-->
-            <!--</div>-->
-            <!--<div>-->
-                <!--<input size="35" type="email" name="email" id="email" required="required" />-->
-            <!--</div>-->
+    <!--<div class="row">-->
+    <!--<h4>Your Email: </h4>-->
+    <!--</div>-->
+    <!--<div>-->
+    <!--<input size="35" type="email" name="email" id="email" required="required" />-->
+    <!--</div>-->
 
-            <!--<div class="row">-->
-                <!--<h4>Your Name:</h4>-->
-            <!--</div>-->
-            <!--<div>-->
-                <!--<input size="35" type="text" name="name" id="name" placeholder="First Last" required="required" />-->
-            <!--</div>-->
-        <!--</div>-->
+    <!--<div class="row">-->
+    <!--<h4>Your Name:</h4>-->
+    <!--</div>-->
+    <!--<div>-->
+    <!--<input size="35" type="text" name="name" id="name" placeholder="First Last" required="required" />-->
+    <!--</div>-->
+    <!--</div>-->
 
-        <!--<div class="questions">-->
-            <!--<div class="row">-->
-                <!--<h4>Attending?</h4>-->
-            <!--</div>-->
-            <!--<div class="answerInputs">-->
-                <!--<div class="buttons" data-toggle="buttons">-->
-                    <!--<button class="reply">Of Course!</button>-->
-                    <!--<button class="reply">Sorry =(</button>-->
-                <!--</div>-->
-            <!--</div>-->
+    <!--<div class="questions">-->
+    <!--<div class="row">-->
+    <!--<h4>Attending?</h4>-->
+    <!--</div>-->
+    <!--<div class="answerInputs">-->
+    <!--<div class="buttons" data-toggle="buttons">-->
+    <!--<button class="reply">Of Course!</button>-->
+    <!--<button class="reply">Sorry =(</button>-->
+    <!--</div>-->
+    <!--</div>-->
 
-            <!--<div class="row">-->
-                <!--<h4>Bringing a +1?</h4>-->
-            <!--</div>-->
-            <!--<div class="answerInputs">-->
-                <!--<div class="buttons" data-toggle="buttons">-->
-                    <!--<button class="reply">Yup</button>-->
-                    <!--<button class="reply">Nope</button>-->
-                <!--</div>-->
-            <!--</div>-->
+    <!--<div class="row">-->
+    <!--<h4>Bringing a +1?</h4>-->
+    <!--</div>-->
+    <!--<div class="answerInputs">-->
+    <!--<div class="buttons" data-toggle="buttons">-->
+    <!--<button class="reply">Yup</button>-->
+    <!--<button class="reply">Nope</button>-->
+    <!--</div>-->
+    <!--</div>-->
 
-            <!--&lt;!&ndash;QUESTIONS THAT APPEAR DEPENDING ON PREVIOUS ANSWERS&ndash;&gt;-->
-            <!--<div class="row">-->
-                <!--<h4>+1's Name</h4>-->
-            <!--</div>-->
-            <!--<div class="answerInputs">-->
-                <!--<input size="35" type="text" id="1name" name="1name" />-->
-            <!--</div>-->
+    <!--&lt;!&ndash;QUESTIONS THAT APPEAR DEPENDING ON PREVIOUS ANSWERS&ndash;&gt;-->
+    <!--<div class="row">-->
+    <!--<h4>+1's Name</h4>-->
+    <!--</div>-->
+    <!--<div class="answerInputs">-->
+    <!--<input size="35" type="text" id="1name" name="1name" />-->
+    <!--</div>-->
 
-            <!--<div class="row">-->
-                <!--<h4>Food Preference</h4>-->
-            <!--</div>-->
+    <!--<div class="row">-->
+    <!--<h4>Food Preference</h4>-->
+    <!--</div>-->
 
-            <!--<br />-->
-            <!--<button type="submit">Submit</button>-->
-        <!--</div>-->
+    <!--<br />-->
+    <!--<button type="submit">Submit</button>-->
+    <!--</div>-->
     <!--</form>-->
 </div>
 
