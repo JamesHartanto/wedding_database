@@ -4,29 +4,46 @@ package wedding;
  * Created by JamesHartanto on 7/24/17.
  */
 public class Guest {
-    private String email;
     private String name;
     private boolean attending;
-    private String foodPreference;
-    private Guest plus1;
+    private String food;
+    private String allergies;
+    private boolean roomBlock;
+    private String song;
+    private String email;
 
-    public Guest(String email, String name, boolean attending, String food, Guest guest) {
+    private boolean guestAllow;
+    private String guestName;
+    private String guestFood;
+    private String guestAllergies;
+
+    public Guest() {
     }
 
-    public Guest(String email, String name) {
-        this.email = email;
+    public Guest(String name) {
+        this.name = name;
+    }
+
+    public Guest(String name, boolean attending, String food, String allergies, boolean roomBlock, String song, String email, boolean guestAllow, String guestName, String guestFood, String guestAllergies) {
         this.name = name;
         this.attending = attending;
-        this.foodPreference = foodPreference;
-        this.plus1 = plus1;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
+        this.food = food;
+        this.allergies = allergies;
+        this.roomBlock = roomBlock;
+        this.song = song;
         this.email = email;
+        this.guestAllow = guestAllow;
+        this.guestName = guestName;
+        this.guestFood = guestFood;
+        this.guestAllergies = guestAllergies;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public boolean isAttending() {
@@ -37,27 +54,75 @@ public class Guest {
         this.attending = attending;
     }
 
-    public String getFoodPreference() {
-        return foodPreference;
+    public String getFood() {
+        return food;
     }
 
-    public void setFoodPreference(String foodPreference) {
-        this.foodPreference = foodPreference;
+    public void setFood(String food) {
+        this.food = food;
     }
 
-    public Guest getPlus1() {
-        return plus1;
+    public String getAllergies() {
+        return allergies;
     }
 
-    public void setPlus1(Guest plus1) {
-        this.plus1 = plus1;
+    public void setAllergies(String allergies) {
+        this.allergies = allergies;
     }
 
-    public String getName() {
-        return name;
+    public boolean isRoomBlock() {
+        return roomBlock;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setRoomBlock(boolean roomBlock) {
+        this.roomBlock = roomBlock;
+    }
+
+    public String getSong() {
+        return song;
+    }
+
+    public void setSong(String song) {
+        this.song = song;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public boolean isGuestAllow() {
+        return guestAllow;
+    }
+
+    public void setGuestAllow(boolean guestAllow) {
+        this.guestAllow = guestAllow;
+    }
+
+    public String getGuestName() {
+        return guestName;
+    }
+
+    public void setGuestName(String guestName) {
+        this.guestName = guestName;
+    }
+
+    public String getGuestFood() {
+        return guestFood;
+    }
+
+    public void setGuestFood(String guestFood) {
+        this.guestFood = guestFood;
+    }
+
+    public String getGuestAllergies() {
+        return guestAllergies;
+    }
+
+    public void setGuestAllergies(String guestAllergies) {
+        this.guestAllergies = guestAllergies;
     }
 }

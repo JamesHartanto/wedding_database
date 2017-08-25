@@ -28,11 +28,9 @@
           rel="stylesheet" type="text/css"/>
 
     <style>
-        /*#identity{*/
-            /*align-content: center;*/
-            /*margin-left: 10em;*/
-            /*margin-right: 10em;*/
-        /*}*/
+        .reply {
+            width: 100px;
+        }
     </style>
 
 </head>
@@ -45,9 +43,6 @@
 </header>
 
 <body>
-
-<!--<div class="brand">Nancy & Steven</div>-->
-<!--<div class="address-bar">1 Monarch Beach Resort | Dana Point, CA 92629 | 949.234.3200</div>-->
 
 <!-- Navigation -->
 <nav class="navbar navbar-default" role="navigation">
@@ -97,31 +92,52 @@
 
 <br/>
 <br/>
-<div class="main">
+<div class="container">
 
-    <!--Modal option-->
-    <!--&lt;!&ndash; button&ndash;&gt;-->
-    <!--<button id="rsvp-button" type="button" data-remodal-target="rsvp-modal">RSVP</button>-->
+    <form action="rsvp2.html" th:action="@{/rsvpValidation}" method="post">
 
-    <!--<div class="remodal" id="rsvp-modal" data-remodal-id="rsvp-modal">-->
-    <!--<a href="#" data-remodal-action="close" class="remodal-close"></a>-->
-    <!--<h2>WHOOO!</h2>-->
-    <!--<br/>-->
-    <!--<a href="#" data-remodal-action="cancel" class="remodal-cancel">Back!</a>-->
-    <!--</div>-->
-
-    <form action="rsvp1.html" th:action="@{/rsvpValidation}" method="post">
-        <!--This will bring a verification-->
-        <div id="identity">
-            <h4>Your Name:</h4>
-            <br/>
-            <div>
-                <input size="35" type="text" name="name" id="name" placeholder="First Last" required="required" />
+        <div class="questions">
+            <div class="row">
+                <h4>Attending?</h4>
             </div>
-        </div>
+            <div class="answerInputs">
+                <div class="buttons" data-toggle="buttons">
+                    <button class="reply">Of Course!</button>
+                    <button class="reply">Sorry =(</button>
+                </div>
+            </div>
 
-        <br />
-        <button type="submit">Find My Invitation</button>
+            <div class="row">
+                <h4>Bringing a +1?</h4>
+            </div>
+            <div class="answerInputs">
+                <div class="buttons" data-toggle="buttons">
+                    <button class="reply">Yup</button>
+                    <button class="reply">Nope</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>+1's Name</h4>
+            </div>
+            <div class="answerInputs">
+                <input size="35" type="text" id="1name" name="1name" />
+            </div>
+
+            <div class="row">
+                <h4>Food Preference</h4>
+            </div>
+
+            <div class="row">
+                <h4>Your Email: </h4>
+            </div>
+            <div>
+                <input size="35" type="email" name="email" id="email" />
+            </div>
+
+            <br />
+            <button type="submit">Submit</button>
+        </div>
     </form>
 </div>
 

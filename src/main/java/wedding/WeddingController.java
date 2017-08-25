@@ -21,19 +21,11 @@ public class WeddingController {
     WeddingRepository weddingRepository;
 
     // VERIFICATION TO AVOID TROLLS
-    // names
+    // names list
     public List<String> nameList(){
         List<String> names = new ArrayList<>();
         for (int x = 0; x < weddingRepository.listGuests().size(); x = x + 1){
-            names.add(weddingRepository.listGuests().get(x).getName());
-        }
-        return names;
-    }
-    // email
-    public List<String> emailList(){
-        List<String> names = new ArrayList<>();
-        for (int x = 0; x < weddingRepository.listGuests().size(); x = x + 1){
-            names.add(weddingRepository.listGuests().get(x).getEmail());
+            names.add(weddingRepository.listGuests().get(x).getName().toLowerCase());
         }
         return names;
     }
@@ -61,22 +53,15 @@ public class WeddingController {
     }
 
     @PostMapping("/rsvpValidation")
-    public String rsvpValidation(Model model, String name, String email, boolean attending, String food, boolean plus1, String name1, String food1){
-        if(nameList().contains(name) && emailList().contains(email)) {
-            // passes the lame validation
+    public String rsvpValidation(Model model, String name){
+        if(nameList().contains(name.toLowerCase())) {
+            // in the guestlist validation
             model.addAttribute("success", true);
-            // to avoid null values
-            if(!plus1){
-                name1 = "";
-                food1 = "";
-            }
-            // adding it to the database
-            weddingRepository.addGuest(name,email,attending, food, new Guest(name1,food1));
         } else{
             // failed to pass validation!
             model.addAttribute("success",false);
         }
-        return "redirect:/home";
+        return "redirect:/rsvp1";
     }
 
     // photos of engagement
