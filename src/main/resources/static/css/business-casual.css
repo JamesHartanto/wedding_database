@@ -10,6 +10,11 @@ header{
     background-repeat: no-repeat;
     background-size: 1200px auto;
 }
+@media (max-width: 850px) {
+    header{
+        background-size: 800px auto;
+    }
+}
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -52,6 +57,7 @@ hr {
     max-width: 400px;
     border-color: #999999;
 }
+
 .otherfont{
     font-family: 'Josefin Sans', sans-serif;
 }

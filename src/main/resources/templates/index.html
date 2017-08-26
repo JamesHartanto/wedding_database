@@ -36,6 +36,7 @@
     <style>
         .indented {
             text-align: center;
+            margin-top:4em;
         }
 
         #hide {
@@ -53,23 +54,28 @@
             margin-right: auto;
             display: block;
         }
+        #and{
+            font-size: 9pt;
+        }
         img {height: 40em; width: 60em;}
+
         @media(max-width: 850px){
             img{height: 18em; width: 27em;}
+            .namefont{font-size: 25pt;}
+            #and{font-size: 5pt;}
+            .otherfont{font-size: 13pt;}
+            .indented {
+                margin-top:2em;
+            }
         }
 
     </style>
 
 </head>
-<header style="height: 16em">
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+<header>
     <br/>
     <h3 class="indented">
-        <span style="color:#49274A" class="namefont">Nancy</span> <span class="otherfont"
-                                                                        style="font-size: 9pt">and</span> <span
+        <span style="color:#49274A" class="namefont">Nancy</span> <span class="otherfont" id="and">and</span> <span
             style="color:#49274A" class="namefont">Steven</span>
         <br/>
         <br/>
