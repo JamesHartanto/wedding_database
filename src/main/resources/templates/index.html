@@ -53,6 +53,10 @@
             margin-right: auto;
             display: block;
         }
+        img {height: 40em; width: 60em;}
+        @media(max-width: 850px){
+            img{height: 20em; width: 30em;}
+        }
 
     </style>
 
@@ -129,7 +133,7 @@
 </nav>
 
 <div id="index_img" style="position:absolute; width:100%; height:100%">
-    <img src="../static/img/1homepage.jpg" th:src="@{/img/1homepage.jpg}" style="height: 40em; width: 60em;"/>
+    <img src="../static/img/1homepage.jpg" th:src="@{/img/1homepage.jpg}" />
 </div>
 
 <!--jQuery -->
