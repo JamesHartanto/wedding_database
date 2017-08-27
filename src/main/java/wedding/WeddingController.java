@@ -52,22 +52,26 @@ public class WeddingController {
         return "rsvp";
     }
 
-
-    @GetMapping("/rsvp1")
-    public String rsvp1(){
-        return "rsvp1";
-    }
-
-    @PostMapping("/rsvpValidation")
+    @PostMapping("/rsvp1")
     public String rsvpValidation(Model model, String name){
         if(nameList().contains(name.toLowerCase())) {
-            // in the guestlist validation
-            model.addAttribute("success", true);
+
+            Guest guest = weddingRepository.getAGuest(name.toLowerCase());
+
+            // modeling the guest
+            model.addAttribute("guest", guest);
+
         } else{
             // failed to pass validation!
             model.addAttribute("success",false);
+            return "rsvp2";
         }
-        return "redirect:/rsvp1";
+        return "rsvp1";
+    }
+
+    @PostMapping("/rsvp2")
+    public String rsvp2(){
+        return "rsvp2";
     }
 
     // photos of engagement

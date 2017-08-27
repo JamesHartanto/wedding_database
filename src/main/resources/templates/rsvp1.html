@@ -94,7 +94,7 @@
 <br/>
 <div class="container">
 
-    <form action="rsvp2.html" th:action="@{/rsvpValidation}" method="post">
+    <form action="rsvp2.html" th:action="@{/rsvp2}" method="post">
 
         <div class="questions">
             <!--ATTENDING-->
@@ -127,39 +127,41 @@
 
             <!--GUEST RELATED-->
             <!--BRINGING GUEST-->
-            <div class="row">
-                <h4>Bringing a Guest?</h4>
-            </div>
-            <div class="answerInputs">
-                <div class="buttons" data-toggle="buttons">
-                    <button class="reply">Yes</button>
-                    <button class="reply">No</button>
+            <div th:if="${guest.isGuestAllow()}">
+                <div class="row">
+                    <h4>Bringing a Guest?</h4>
                 </div>
-            </div>
+                <div class="answerInputs">
+                    <div class="buttons" data-toggle="buttons">
+                        <button class="reply">Yes</button>
+                        <button class="reply">No</button>
+                    </div>
+                </div>
 
-            <!--GUEST NAME-->
-            <div class="row">
-                <h4>Guest Name</h4>
-            </div>
-            <div class="answerInputs">
-                <input size="35em" type="text" id="guestName" title="guestName" name="guestName" />
-            </div>
+                <!--GUEST NAME-->
+                <div class="row">
+                    <h4>Guest Name</h4>
+                </div>
+                <div class="answerInputs">
+                    <input size="35em" type="text" id="guestName" title="guestName" name="guestName" />
+                </div>
 
-            <!--GUEST FOOD-->
-            <div class="row">
-                <h4>Guest Food Choice</h4>
-                <input type="radio" name="guestFood" id="guestfood1" value="Beef" />
-                <label for="guestfood1">Beef</label><br />
-                <input type="radio" name="guestFood" id="guestfood2" value="Fish" />
-                <label for="guestfood2">Fish</label><br />
-                <input type="radio" name="guestFood" id="guestfood3" value="Vegetarian" />
-                <label for="guestfood3">Vegetarian</label>
-            </div>
+                <!--GUEST FOOD-->
+                <div class="row">
+                    <h4>Guest Food Choice</h4>
+                    <input type="radio" name="guestFood" id="guestfood1" value="Beef" />
+                    <label for="guestfood1">Beef</label><br />
+                    <input type="radio" name="guestFood" id="guestfood2" value="Fish" />
+                    <label for="guestfood2">Fish</label><br />
+                    <input type="radio" name="guestFood" id="guestfood3" value="Vegetarian" />
+                    <label for="guestfood3">Vegetarian</label>
+                </div>
 
-            <!--GUEST ALLERGIES-->
-            <div class="row">
-                <h4>Guest Allergies?</h4>
-                <input size="35em" type="text" id="guestAllergies" title="guestAllergies" name="guestAllergies"/>
+                <!--GUEST ALLERGIES-->
+                <div class="row">
+                    <h4>Guest Allergies?</h4>
+                    <input size="35em" type="text" id="guestAllergies" title="guestAllergies" name="guestAllergies"/>
+                </div>
             </div>
 
             <!--ROOM BLOCK-->
