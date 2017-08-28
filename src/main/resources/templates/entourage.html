@@ -32,12 +32,14 @@
         .img-circle { width:15em; height:15em; margin:auto; }
         .box{background-color: #DCD0C0;margin-right: 15em; margin-left: 15em;}
         .entourage-text{margin-bottom: 0px;}
+        .nav-bridegroom{display: flex;}
         @media (max-width: 850px) {
             .box{
                 margin-right: 0;
                 margin-left: 0;
             }
         }
+        #groomsmen{display: none;}
     </style>
 
 </head>
@@ -93,15 +95,29 @@
         </div>
     </nav>
 
-    <!--Main content-->
-    <div class="box">
-        <div class="col-lg-12">
+    <!--NAV FOR BRIDESMAIDS OR GROOMSMEN-->
+    <div class="nav-bridegroom">
+        <div class="col-lg-12" id="buttonBride">
             <hr />
-            <h2 class="intro-text text-center">Bridesmaids
-                <!--<strong>Team</strong>-->
-            </h2>
+            <h2 class="intro-text text-center">Bridesmaids</h2>
             <hr />
         </div>
+        <div class="col-lg-12" id="buttonGroom">
+            <hr />
+            <h2 class="intro-text text-center">Groomsmen</h2>
+            <hr />
+        </div>
+    </div>
+
+    <!--Main content-->
+    <div class="box" id="bridesmaids">
+        <!--<div class="col-lg-12">-->
+            <!--<hr />-->
+            <!--<h2 class="intro-text text-center">Bridesmaids-->
+                <!--&lt;!&ndash;<strong>Team</strong>&ndash;&gt;-->
+            <!--</h2>-->
+            <!--<hr />-->
+        <!--</div>-->
         <div class="col-sm-4 text-center">
             <img class="img-responsive img-circle" src="http://placehold.it/1x1" alt="" />
             <div><h3>John Smith</h3></div>
@@ -135,13 +151,13 @@
         <div class="clearfix"></div>
     </div>
 
-    <div class="box">
-        <div class="col-lg-12">
-            <hr />
-            <h2 class="intro-text text-center">Groomsmen
-            </h2>
-            <hr />
-        </div>
+    <div class="box" id="groomsmen">
+        <!--<div class="col-lg-12">-->
+            <!--<hr />-->
+            <!--<h2 class="intro-text text-center">Groomsmen-->
+            <!--</h2>-->
+            <!--<hr />-->
+        <!--</div>-->
         <div class="col-sm-4 text-center">
             <img class="img-responsive img-circle" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/10423666_10155479910150319_4481373277105337279_n.jpg?oh=c6b2ea75b66314aabe51c2b8e273b7d6&amp;oe=5A1F395A" alt="" />
             <div class="entourage-text">
@@ -186,6 +202,8 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+
+<script src="../static/js/entourage.js" th:src="@{js/entourage.js}"></script>
 
 </body>
 
