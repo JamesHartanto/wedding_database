@@ -95,6 +95,8 @@
 <div class="container">
 
     <form action="rsvp2.html" th:action="@{/rsvp2}" method="post">
+        <!--name hidden-->
+        <input type="text" title="name" name="name" th:value="${guest.getName()}" th:hidden="true" />
 
         <div class="questions">
             <!--ATTENDING-->
@@ -103,8 +105,8 @@
             </div>
             <div class="answerInputs">
                 <div class="buttons" data-toggle="buttons">
-                    <button id="attendingYes" value="true" class="reply">Yes</button>
-                    <button id="attendingNo" value="false" class="reply">No</button>
+                    <button name="attending" id="attendingYes" value="true" class="reply">Yes</button>
+                    <button name="attending" id="attendingNo" value="false" class="reply">No</button>
                 </div>
             </div>
 
@@ -133,8 +135,8 @@
                 </div>
                 <div class="answerInputs">
                     <div class="buttons" data-toggle="buttons">
-                        <button value="true" id="bringGuestYes" class="reply">Yes</button>
-                        <button value="false" id="bringGuestNo" class="reply">No</button>
+                        <button name="bringGuest" value="true" id="bringGuestYes" class="reply">Yes</button>
+                        <button name="bringGuest" value="false" id="bringGuestNo" class="reply">No</button>
                     </div>
                 </div>
 
@@ -170,8 +172,8 @@
             </div>
             <div class="answerInputs">
                 <div class="buttons" data-toggle="buttons">
-                    <button value="true" id="roomBlockYes" class="reply">Yes</button>
-                    <button value="false" id="roomBlockNo" class="reply">No</button>
+                    <button name="roomBlock" value="true" id="roomBlockYes" class="reply">Yes</button>
+                    <button name="roomBlock" value="false" id="roomBlockNo" class="reply">No</button>
                 </div>
             </div>
 

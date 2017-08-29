@@ -38,6 +38,19 @@ public class Guest {
         this.guestAllergies = guestAllergies;
     }
 
+    public Guest(String name, boolean attending, String food, String allergies, boolean roomBlock, String song, String email, String guestName, String guestFood, String guestAllergies) {
+        this.name = name;
+        this.attending = attending;
+        this.food = food;
+        this.allergies = allergies;
+        this.roomBlock = roomBlock;
+        this.song = song;
+        this.email = email;
+        this.guestName = guestName;
+        this.guestFood = guestFood;
+        this.guestAllergies = guestAllergies;
+    }
+
     public String getName() {
         return name;
     }

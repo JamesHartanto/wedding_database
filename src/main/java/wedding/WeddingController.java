@@ -70,7 +70,12 @@ public class WeddingController {
     }
 
     @PostMapping("/rsvp2")
-    public String rsvp2(){
+    public String rsvp2(String name, boolean attending, String food, String allergies,
+                        boolean bringGuest, String guestName, String guestFood, String guestAllergies,
+                        boolean roomBlock, String song, String email){
+        Guest guest = new Guest(name, attending, food, allergies, roomBlock, song, email, guestName, guestFood, guestAllergies);
+
+        weddingRepository.updateGuest(guest);
         return "rsvp2";
     }
 

@@ -34,11 +34,10 @@ public class WeddingRepository {
     }
 
     public void updateGuest(Guest guest){
-        jdbcTemplate.update("INSERT INTO guestinfo(" +
-                "name,attending,food,allergies,roomblock,song,email,guestallow,guestname,guestfood,guestallergies)" +
-                "VALUES (?,?,?,?,?,?,?,?,?,?,?)",
-                new Object[]{guest.getName(),guest.isAttending(),guest.getFood(),guest.getAllergies(),guest.isRoomBlock(),
-                guest.getSong(),guest.getEmail(),guest.isGuestAllow(),guest.getGuestName(),guest.getFood(),guest.getGuestAllergies()});
+        jdbcTemplate.update("UPDATE guestinfo SET " +
+                "attending=?, food=?, allergies=?, roomblock=?, song=?, email=?, guestname=?, guestfood=?, guestallergies=? WHERE name=?",
+                new Object[]{guest.isAttending(),guest.getFood(),guest.getAllergies(),guest.isRoomBlock(),
+                guest.getSong(),guest.getEmail(),guest.getGuestName(),guest.getFood(),guest.getGuestAllergies(),guest.getName()});
     }
 
     public Guest getAGuest(String name){
