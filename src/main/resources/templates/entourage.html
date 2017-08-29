@@ -33,13 +33,33 @@
         .box{background-color: #DCD0C0;margin-right: 15em; margin-left: 15em;}
         .entourage-text{margin-bottom: 0px;}
         .nav-bridegroom{display: flex;}
+        #buttonBride{
+            left:8em;
+        }
+        #buttonGroom{
+            right:8em;
+        }
+        .vr {
+            margin-top:1.5em;
+            width:1px;
+            height:4em;
+            background-color:#000;
+        }
+
         @media (max-width: 850px) {
             .box{
                 margin-right: 0;
                 margin-left: 0;
             }
+            .nav-bridegroom{display: block;}
+            #buttonBride{
+                left:0em;
+            }
+            #buttonGroom{
+                right:0em;
+            }
         }
-        #groomsmen{display: none;}
+
     </style>
 
 </head>
@@ -96,18 +116,19 @@
     </nav>
 
     <!--NAV FOR BRIDESMAIDS OR GROOMSMEN-->
-    <div class="nav-bridegroom">
-        <div class="col-lg-12" id="buttonBride">
+    <section class="nav-bridegroom">
+        <div class="col-lg-12" id="buttonBride" >
             <hr />
-            <h2 class="intro-text text-center" id="bridesmaidText" style="font-weight: bold">Bridesmaids</h2>
-            <hr />
-        </div>
-        <div class="col-lg-12" id="buttonGroom">
-            <hr />
-            <h2 class="intro-text text-center" id="groomsmenText">Groomsmen</h2>
+            <h2 class="intro-text text-center" id="bridesmaidText" style="font-weight: 900">Bridesmaids</h2>
             <hr />
         </div>
-    </div>
+        <div class="vr">&nbsp;</div>
+        <div class="col-lg-12" id="buttonGroom" >
+            <hr />
+            <h2 class="intro-text text-center" id="groomsmenText" style="font-weight: lighter">Groomsmen</h2>
+            <hr />
+        </div>
+    </section>
 
     <!--Main content-->
     <div class="box" id="bridesmaids">

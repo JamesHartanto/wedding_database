@@ -17,13 +17,13 @@ buttonGroom.addEventListener("click", showGroom);
 function showBride() {
     bridesmaids.style.display = "block";
     groomsmen.style.display = "none";
-    bridesmaidText.style = "font-weight: bold";
-    groomsmenText.style = "font-weight: normal";
+    bridesmaidText.style = "font-weight: 900";
+    groomsmenText.style = "font-weight: lighter";
 }
 
 function showGroom() {
     bridesmaids.style.display = "none";
     groomsmen.style.display = "block";
-    bridesmaidText.style = "font-weight: normal";
-    groomsmenText.style = "font-weight: bold";
+    bridesmaidText.style = "font-weight: lighter";
+    groomsmenText.style = "font-weight: 900";
 }
