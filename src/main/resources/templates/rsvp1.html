@@ -93,6 +93,9 @@
 <br/>
 <br/>
 <div class="container">
+    <div th:text="${guest.isGuestAllow()}"></div>
+    <div th:text="${guest.isAttending()}"></div>
+    <div th:text="${guest.isRoomBlock()}"></div>
 
     <form action="rsvp2.html" th:action="@{/rsvp2}" method="post">
         <!--name hidden-->
@@ -135,8 +138,8 @@
                 </div>
                 <div class="answerInputs">
                     <div class="buttons" data-toggle="buttons">
-                        <button name="bringGuest" value="true" id="bringGuestYes" class="reply">Yes</button>
-                        <button name="bringGuest" value="false" id="bringGuestNo" class="reply">No</button>
+                        <button name="bringGuest" value="true" id="bringGuestYes" >Yes</button>
+                        <button name="bringGuest" value="false" id="bringGuestNo" >No</button>
                     </div>
                 </div>
 
