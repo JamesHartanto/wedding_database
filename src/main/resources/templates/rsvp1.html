@@ -103,8 +103,8 @@
             </div>
             <div class="answerInputs">
                 <div class="buttons" data-toggle="buttons">
-                    <button class="reply">Yes</button>
-                    <button class="reply">No</button>
+                    <button id="attendingYes" value="true" class="reply">Yes</button>
+                    <button id="attendingNo" value="false" class="reply">No</button>
                 </div>
             </div>
 
@@ -133,8 +133,8 @@
                 </div>
                 <div class="answerInputs">
                     <div class="buttons" data-toggle="buttons">
-                        <button class="reply">Yes</button>
-                        <button class="reply">No</button>
+                        <button value="true" id="bringGuestYes" class="reply">Yes</button>
+                        <button value="false" id="bringGuestNo" class="reply">No</button>
                     </div>
                 </div>
 
@@ -170,8 +170,8 @@
             </div>
             <div class="answerInputs">
                 <div class="buttons" data-toggle="buttons">
-                    <button class="reply">Yes</button>
-                    <button class="reply">No</button>
+                    <button value="true" id="roomBlockYes" class="reply">Yes</button>
+                    <button value="false" id="roomBlockNo" class="reply">No</button>
                 </div>
             </div>
 
@@ -206,6 +206,7 @@
 
 <!--remodal-->
 <script src="../static/js/remodal.js" th:src="@{/js/remodal.js}"></script>
+<script src="../static/js/rsvp.js" th:src="@{/js/rsvp.js}"></script>
 
 </body>
 
