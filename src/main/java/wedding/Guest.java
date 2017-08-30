@@ -5,10 +5,10 @@ package wedding;
  */
 public class Guest {
     private String name;
-    private boolean attending;
+    private String attending;
     private String food;
     private String allergies;
-    private boolean roomBlock;
+    private String roomBlock;
     private String song;
     private String email;
 
@@ -24,7 +24,7 @@ public class Guest {
         this.name = name;
     }
 
-    public Guest(String name, boolean attending, String food, String allergies, boolean roomBlock, String song, String email, boolean guestAllow, String guestName, String guestFood, String guestAllergies) {
+    public Guest(String name, String attending, String food, String allergies, String roomBlock, String song, String email, boolean guestAllow, String guestName, String guestFood, String guestAllergies) {
         this.name = name;
         this.attending = attending;
         this.food = food;
@@ -38,7 +38,7 @@ public class Guest {
         this.guestAllergies = guestAllergies;
     }
 
-    public Guest(String name, boolean attending, String food, String allergies, boolean roomBlock, String song, String email, String guestName, String guestFood, String guestAllergies) {
+    public Guest(String name, String attending, String food, String allergies, String roomBlock, String song, String email, String guestName, String guestFood, String guestAllergies) {
         this.name = name;
         this.attending = attending;
         this.food = food;
@@ -59,11 +59,11 @@ public class Guest {
         this.name = name;
     }
 
-    public boolean isAttending() {
+    public String getAttending() {
         return attending;
     }
 
-    public void setAttending(boolean attending) {
+    public void setAttending(String attending) {
         this.attending = attending;
     }
 
@@ -83,11 +83,11 @@ public class Guest {
         this.allergies = allergies;
     }
 
-    public boolean isRoomBlock() {
+    public String getRoomBlock() {
         return roomBlock;
     }
 
-    public void setRoomBlock(boolean roomBlock) {
+    public void setRoomBlock(String roomBlock) {
         this.roomBlock = roomBlock;
     }
 
