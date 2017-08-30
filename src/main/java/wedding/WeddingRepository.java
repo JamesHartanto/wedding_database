@@ -21,10 +21,10 @@ public class WeddingRepository {
                 new Object[]{},
                 (resultSet, i) -> new Guest(
                         resultSet.getString("name"),
-                        resultSet.getBoolean("attending"),
+                        resultSet.getString("attending"),
                         resultSet.getString("food"),
                         resultSet.getString("allergies"),
-                        resultSet.getBoolean("roomblock"),
+                        resultSet.getString("roomblock"),
                         resultSet.getString("song"),
                         resultSet.getString("email"),
                         resultSet.getBoolean("guestallow"),
@@ -36,7 +36,7 @@ public class WeddingRepository {
     public void updateGuest(Guest guest){
         jdbcTemplate.update("UPDATE guestinfo SET " +
                 "attending=?, food=?, allergies=?, roomblock=?, song=?, email=?, guestname=?, guestfood=?, guestallergies=? WHERE name=?",
-                new Object[]{guest.isAttending(),guest.getFood(),guest.getAllergies(),guest.isRoomBlock(),
+                new Object[]{guest.getAttending(),guest.getFood(),guest.getAllergies(),guest.getRoomBlock(),
                 guest.getSong(),guest.getEmail(),guest.getGuestName(),guest.getFood(),guest.getGuestAllergies(),guest.getName()});
     }
 
@@ -45,10 +45,10 @@ public class WeddingRepository {
                 new Object[]{name},
                 (resultSet, i) -> new Guest(
                         resultSet.getString("name"),
-                        resultSet.getBoolean("attending"),
+                        resultSet.getString("attending"),
                         resultSet.getString("food"),
                         resultSet.getString("allergies"),
-                        resultSet.getBoolean("roomblock"),
+                        resultSet.getString("roomblock"),
                         resultSet.getString("song"),
                         resultSet.getString("email"),
                         resultSet.getBoolean("guestallow"),

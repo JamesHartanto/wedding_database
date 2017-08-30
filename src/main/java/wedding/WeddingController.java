@@ -53,13 +53,14 @@ public class WeddingController {
     }
 
     @PostMapping("/rsvp1")
-    public String rsvpValidation(Model model, String name){
+    public String rsvpValidation(Model model, String name, String attending){
         if(nameList().contains(name.toLowerCase())) {
 
             Guest guest = weddingRepository.getAGuest(name.toLowerCase());
 
             // modeling the guest
             model.addAttribute("guest", guest);
+            model.addAttribute("attending", attending);
 
         } else{
             // failed to pass validation!
@@ -70,14 +71,13 @@ public class WeddingController {
     }
 
     @PostMapping("/rsvp2")
-    public String rsvp2(Model model, String name, boolean attending, String food, String allergies,
+    public String rsvp2(String name, String attending, String food, String allergies,
                         String guestName, String guestFood, String guestAllergies,
-                        boolean roomBlock, String song, String email){
+                        String roomBlock, String song, String email){
         Guest guest = new Guest(name, attending, food, allergies, roomBlock, song, email, guestName, guestFood, guestAllergies);
 
         weddingRepository.updateGuest(guest);
-        model.addAttribute("attending",attending);
-        model.addAttribute("roomBlock",roomBlock);
+
         return "rsvp2";
     }
 

@@ -28,9 +28,10 @@
           rel="stylesheet" type="text/css"/>
 
     <style>
-        .reply {
-            width: 100px;
+        #food_preference #food_allergies #email_confirmation #room_block #song_suggestion{
+            display: none;
         }
+
     </style>
 
 </head>
@@ -93,9 +94,6 @@
 <br/>
 <br/>
 <div class="container">
-    <div th:text="${guest.isGuestAllow()}"></div>
-    <div th:text="${guest.isAttending()}"></div>
-    <div th:text="${guest.isRoomBlock()}"></div>
 
     <form action="rsvp2.html" th:action="@{/rsvp2}" method="post">
         <!--name hidden-->
@@ -108,15 +106,15 @@
             </div>
             <div class="answerInputs">
                 <div class="buttons" data-toggle="buttons">
-                    <input type="button" name="attending" id="attendingYes" value="yes" title="Yes" />
-                    <input type="button" name="attending" id="attendingNo" value="no" title="No" />
+                    <input type="button" name="attending" id="attendingYes" value="Yes" />
+                    <input type="button" name="attending" id="attendingNo" value="No" />
                     <!--<button name="attending" id="attendingYes" value="true" class="reply">Yes</button>-->
                     <!--<button name="attending" id="attendingNo" value="false" class="reply">No</button>-->
                 </div>
             </div>
 
             <!--FOOD PREFERENCE-->
-            <div class="row">
+            <div class="row" id="food_preference" th:hidden="true">
                 <h4>Food Choice</h4>
                 <input type="radio" name="food" id="food1" value="Beef" th:checked="${guest.getFood() == 'Beef'}"/>
                 <label for="food1">Beef</label><br/>
@@ -127,7 +125,7 @@
             </div>
 
             <!--ALLERGIES-->
-            <div class="row">
+            <div class="row" id="food_allergies" th:hidden="true">
                 <h4>Allergies?</h4>
                 <input size="35em" type="text" id="allergies" title="allergies" name="allergies" th:value="${guest.getAllergies()}"/>
             </div>
@@ -140,8 +138,8 @@
                 </div>
                 <div class="answerInputs">
                     <div class="buttons" data-toggle="buttons">
-                        <button name="bringGuest" value="true" id="bringGuestYes" >Yes</button>
-                        <button name="bringGuest" value="false" id="bringGuestNo" >No</button>
+                        <input type="button" name="bringGuest" id="bringGuestYes" value="Yes" />
+                        <input type="button" name="bringGuest" id="bringGuestNo" value="No" />
                     </div>
                 </div>
 
@@ -172,31 +170,31 @@
             </div>
 
             <!--ROOM BLOCK-->
-            <div class="row">
+            <div class="row" id="room_block" th:hidden="true">
                 <h4>Room Block?</h4>
-            </div>
-            <div class="answerInputs">
-                <div class="buttons" data-toggle="buttons">
-                    <button name="roomBlock" value="true" id="roomBlockYes" class="reply">Yes</button>
-                    <button name="roomBlock" value="false" id="roomBlockNo" class="reply">No</button>
+                <div class="answerInputs">
+                    <div class="buttons" data-toggle="buttons">
+                        <input type="button" name="roomBlock" id="roomBlockYes" value="Yes" />
+                        <input type="button" name="roomBlock" id="roomBlockNo" value="No" />
+                    </div>
                 </div>
             </div>
 
             <!--SONG SUGGESTION-->
-            <div class="row">
+            <div class="row" id="song_suggestion" th:hidden="true">
                 <h4>Any Song Suggestions?</h4>
-            </div>
-            <div class="answerInputs">
-                <input size="35em" type="text" id="song" title="song" name="song" th:value="${guest.getSong()}" />
+                <div class="answerInputs">
+                    <input size="35em" type="text" id="song" title="song" name="song" th:value="${guest.getSong()}" />
+                </div>
             </div>
 
 
             <!--EMAIL CONFIRMATION-->
-            <div class="row">
+            <div class="row" id="email_confirmation" th:hidden="true">
                 <h4>Your Email: </h4>
-            </div>
-            <div>
-                <input size="35em" type="email" name="email" title="email" id="email" th:value="${guest.getEmail()}"/>
+                <div>
+                    <input size="35em" type="email" name="email" title="email" id="email" th:value="${guest.getEmail()}"/>
+                </div>
             </div>
 
             <br />
