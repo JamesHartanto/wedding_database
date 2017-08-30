@@ -105,6 +105,8 @@
             </div>
             <div class="answerInputs">
                 <div class="buttons" data-toggle="buttons">
+                    <!--<button type="button" name="attending" id="attendingYes" value="Yes" th:checked="${guest.getAttending() =='Yes'}">Yes</button>-->
+                    <!--<button type="button" name="attending" id="attendingNo" value="No" th:checked="${guest.getAttending() =='No'}">No</button>-->
                     <input type="button" name="attending" id="attendingYes" value="Yes" th:checked="${guest.getAttending() == 'Yes'}" />
                     <input type="button" name="attending" id="attendingNo" value="No" th:checked="${guest.getAttending() == 'No'}"/>
                     <input type="text" name="attendingAnswer" id="attendingAnswer" value="" th:hidden="true" />
@@ -143,7 +145,7 @@
                 </div>
 
                 <!--GUEST NAME-->
-                <div id="guest_inputs">
+                <div id="guest_inputs" th:hidden="true">
                     <div class="row" >
                         <h4>Guest Name</h4>
                         <div class="answerInputs">
