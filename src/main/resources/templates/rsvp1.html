@@ -132,7 +132,7 @@
 
             <!--GUEST RELATED-->
             <!--BRINGING GUEST-->
-            <div th:if="${guest.isGuestAllow()}">
+            <div th:if="${guest.isGuestAllow()}" th:hidden="true" id="bring_guest">
                 <div class="row">
                     <h4>Bringing a Guest?</h4>
                 </div>

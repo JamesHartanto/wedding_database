@@ -53,14 +53,13 @@ public class WeddingController {
     }
 
     @PostMapping("/rsvp1")
-    public String rsvpValidation(Model model, String name, String attending){
+    public String rsvpValidation(Model model, String name){
         if(nameList().contains(name.toLowerCase())) {
 
             Guest guest = weddingRepository.getAGuest(name.toLowerCase());
 
             // modeling the guest
             model.addAttribute("guest", guest);
-            model.addAttribute("attending", attending);
 
         } else{
             // failed to pass validation!

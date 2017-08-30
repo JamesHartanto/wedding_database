@@ -16,6 +16,7 @@ var food_preference = document.getElementById("food_preference");
 var food_allergies = document.getElementById("food_allergies");
 var email_confirmation = document.getElementById("email_confirmation");
 var song_suggestion = document.getElementById("song_suggestion");
+var bring_guest = document.getElementById("bring_guest");
 
 // Event listeners
 attendingYes.addEventListener("click", attendYes);
@@ -34,6 +35,7 @@ function attendYes() {
     food_allergies.style.display = "block";
     email_confirmation.style.display = "block";
     song_suggestion.style.display = "block";
+    bring_guest.style.display = "block";
 }
 
 function attendNo() {
@@ -44,6 +46,7 @@ function attendNo() {
     food_allergies.style.display = "none";
     email_confirmation.style.display = "none";
     song_suggestion.style.display = "none";
+    bring_guest.style.display = "none";
 }
 
 function guestYes() {
