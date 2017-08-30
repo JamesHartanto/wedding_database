@@ -70,10 +70,10 @@ public class WeddingController {
     }
 
     @PostMapping("/rsvp2")
-    public String rsvp2(String name, String attending, String food, String allergies,
+    public String rsvp2(String name, String attendingAnswer, String food, String allergies,
                         String guestName, String guestFood, String guestAllergies,
                         String roomBlock, String song, String email){
-        Guest guest = new Guest(name, attending, food, allergies, roomBlock, song, email, guestName, guestFood, guestAllergies);
+        Guest guest = new Guest(name, attendingAnswer, food, allergies, roomBlock, song, email, guestName, guestFood, guestAllergies);
 
         weddingRepository.updateGuest(guest);
 
