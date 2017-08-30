@@ -47,13 +47,14 @@ public class WeddingController {
     }
 
     // form for users to fill
-    @GetMapping("/rsvp")
-    public String rsvp(){
+    @RequestMapping("/rsvp")
+    public String rsvp(Model model){
+        model.addAttribute("error","");
         return "rsvp";
     }
 
     @PostMapping("/rsvp1")
-    public String rsvpValidation(Model model, String name){
+    public String rsvp1(Model model, String name){
         if(nameList().contains(name.toLowerCase())) {
 
             Guest guest = weddingRepository.getAGuest(name.toLowerCase());
@@ -63,8 +64,8 @@ public class WeddingController {
 
         } else{
             // failed to pass validation!
-            model.addAttribute("success",false);
-            return "rsvp2";
+            model.addAttribute("error", "Did you spell your name correctly?");
+            return "rsvp";
         }
         return "rsvp1";
     }

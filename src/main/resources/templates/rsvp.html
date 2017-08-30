@@ -103,6 +103,7 @@
         <!--This will bring a verification-->
         <div id="identity">
             <h4>Your Name:</h4>
+            <div th:text="${error}"></div>
             <br/>
             <div>
                 <input size="35" type="text" name="name" id="name" placeholder="First Last" required="required" />
