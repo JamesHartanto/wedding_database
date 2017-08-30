@@ -73,8 +73,12 @@ public class WeddingController {
     @PostMapping("/rsvp2")
     public String rsvp2(String name, String attendingAnswer, String food, String allergies,
                         String guestName, String guestFood, String guestAllergies,
-                        String roomBlock, String song, String email){
-        Guest guest = new Guest(name, attendingAnswer, food, allergies, roomBlock, song, email, guestName, guestFood, guestAllergies);
+                        String roomBlockAnswer, String song, String email, String bringGuestAnswer){
+        Guest guest = new Guest(name, attendingAnswer, food, allergies, roomBlockAnswer, song, email, guestName, guestFood, guestAllergies);
+
+        if (bringGuestAnswer.equals("No")){
+            guest.setGuestName("-");
+        }
 
         weddingRepository.updateGuest(guest);
 

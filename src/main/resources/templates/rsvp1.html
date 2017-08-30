@@ -143,28 +143,30 @@
                 </div>
 
                 <!--GUEST NAME-->
-                <div class="row">
-                    <h4>Guest Name</h4>
-                </div>
-                <div class="answerInputs">
-                    <input size="35em" type="text" id="guestName" title="guestName" name="guestName" th:value="${guest.getGuestName()}" />
-                </div>
+                <div id="guest_inputs">
+                    <div class="row" >
+                        <h4>Guest Name</h4>
+                        <div class="answerInputs">
+                            <input size="35em" type="text" id="guestName" title="guestName" name="guestName" th:value="${guest.getGuestName()}" />
+                        </div>
+                    </div>
 
-                <!--GUEST FOOD-->
-                <div class="row">
-                    <h4>Guest Food Choice</h4>
-                    <input type="radio" name="guestFood" id="guestfood1" value="Beef" th:checked="${guest.getGuestFood() == 'Beef'}" />
-                    <label for="guestfood1">Beef</label><br />
-                    <input type="radio" name="guestFood" id="guestfood2" value="Fish" th:checked="${guest.getGuestFood() == 'Fish'}"/>
-                    <label for="guestfood2">Fish</label><br />
-                    <input type="radio" name="guestFood" id="guestfood3" value="Vegetarian" th:checked="${guest.getGuestFood() == 'Vegetarian'}"/>
-                    <label for="guestfood3">Vegetarian</label>
-                </div>
+                    <!--GUEST FOOD-->
+                    <div class="row" >
+                        <h4>Guest Food Choice</h4>
+                        <input type="radio" name="guestFood" id="guestfood1" value="Beef" th:checked="${guest.getGuestFood() == 'Beef'}" />
+                        <label for="guestfood1">Beef</label><br />
+                        <input type="radio" name="guestFood" id="guestfood2" value="Fish" th:checked="${guest.getGuestFood() == 'Fish'}"/>
+                        <label for="guestfood2">Fish</label><br />
+                        <input type="radio" name="guestFood" id="guestfood3" value="Vegetarian" th:checked="${guest.getGuestFood() == 'Vegetarian'}"/>
+                        <label for="guestfood3">Vegetarian</label>
+                    </div>
 
-                <!--GUEST ALLERGIES-->
-                <div class="row">
-                    <h4>Guest Allergies?</h4>
-                    <input size="35em" type="text" id="guestAllergies" title="guestAllergies" name="guestAllergies" th:value="${guest.getGuestAllergies()}"/>
+                    <!--GUEST ALLERGIES-->
+                    <div class="row" >
+                        <h4>Guest Allergies?</h4>
+                        <input size="35em" type="text" id="guestAllergies" title="guestAllergies" name="guestAllergies" th:value="${guest.getGuestAllergies()}"/>
+                    </div>
                 </div>
             </div>
 

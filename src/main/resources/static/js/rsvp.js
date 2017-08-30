@@ -9,6 +9,7 @@ var attendingAnswer = document.getElementById("attendingAnswer");
 var bringGuestYes = document.getElementById("bringGuestYes");
 var bringGuestNo = document.getElementById("bringGuestNo");
 var bringGuestAnswer = document.getElementById("bringGuestAnswer");
+var guest_inputs = document.getElementById("guest_inputs");
 
 var roomBlockYes = document.getElementById("roomBlockYes");
 var roomBlockNo = document.getElementById("roomBlockNo");
@@ -58,12 +59,14 @@ function guestYes() {
     bringGuestYes.style = "background-color: #4CAF50";
     bringGuestNo.style = "background-color: white";
     bringGuestAnswer.value = "Yes";
+    guest_inputs.style.display = "block";
 }
 
 function guestNo() {
     bringGuestYes.style = "background-color: white";
     bringGuestNo.style = "background-color: #f44336";
     bringGuestAnswer.value = "No";
+    guest_inputs.style.display = "none";
 }
 
 function blockYes() {
