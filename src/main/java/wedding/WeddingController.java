@@ -93,7 +93,9 @@ public class WeddingController {
 
     // not sure yet... will complete later once gifts are ready
     @RequestMapping("/gifts")
-    public String gifts(Model model, @RequestParam(defaultValue = "") String search){
+    public String gifts(Model model){
+        
+        model.addAttribute("guests",weddingRepository.listGuests());
 
 //        // Getting data from database
 //        List<Gifts> listOfGifts = weddingRepository.listGifts(search);

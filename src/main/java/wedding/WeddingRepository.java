@@ -56,7 +56,7 @@ public class WeddingRepository {
                         resultSet.getString("guestfood"),
                         resultSet.getString("guestallergies")));
     }
-
+    
 //    // GIFTS
 //    public void updateGift(String name, Integer cost, String buyer){
 //        jdbcTemplate.update("INSERT INTO gifts(name,cost,buyer) VALUES(?,?,?)",

@@ -41,14 +41,14 @@ SET default_with_oids = false;
 CREATE TABLE guestinfo (
     id integer NOT NULL,
     name character varying(50) NOT NULL,
-    attending boolean,
+    attending character varying(5),
     food character varying(100),
     guestname character varying(50),
     guestfood character varying(100),
     guestallow boolean,
     allergies character varying(100),
     guestallergies character varying(100),
-    roomblock boolean,
+    roomblock character varying(5),
     song character varying(100),
     email character varying(50)
 );
@@ -89,7 +89,8 @@ ALTER TABLE ONLY guestinfo ALTER COLUMN id SET DEFAULT nextval('guestinfo_id_seq
 --
 
 COPY guestinfo (id, name, attending, food, guestname, guestfood, guestallow, allergies, guestallergies, roomblock, song, email) FROM stdin;
-2	Nancy Lee	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+8	test	\N	Fish	\N	Fish	\N	allergies	\N	\N	song	email@gmail.com
+7	nancy lee	Yes	Fish	-	Fish	t	allergies	guest allergies	Yes	songs	email@gmail.com
 \.
 
 
@@ -97,7 +98,7 @@ COPY guestinfo (id, name, attending, food, guestname, guestfood, guestallow, all
 -- Name: guestinfo_id_seq; Type: SEQUENCE SET; Schema: public; Owner: JamesHartanto
 --
 
-SELECT pg_catalog.setval('guestinfo_id_seq', 2, true);
+SELECT pg_catalog.setval('guestinfo_id_seq', 8, true);
 
 
 --
