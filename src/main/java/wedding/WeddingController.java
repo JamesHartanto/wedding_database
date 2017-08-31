@@ -76,8 +76,11 @@ public class WeddingController {
                         String roomBlockAnswer, String song, String email, String bringGuestAnswer){
         Guest guest = new Guest(name, attendingAnswer, food, allergies, roomBlockAnswer, song, email, guestName, guestFood, guestAllergies);
 
-        if (bringGuestAnswer.equals("No")){
-            guest.setGuestName("-");
+        // checks if guest's guest is attending
+        if (weddingRepository.getAGuest(name).isGuestAllow()){
+            if (bringGuestAnswer.equals("No")){
+                guest.setGuestName("-");
+            }
         }
 
         weddingRepository.updateGuest(guest);
@@ -94,7 +97,7 @@ public class WeddingController {
     // not sure yet... will complete later once gifts are ready
     @RequestMapping("/gifts")
     public String gifts(Model model){
-        
+
         model.addAttribute("guests",weddingRepository.listGuests());
 
 //        // Getting data from database
