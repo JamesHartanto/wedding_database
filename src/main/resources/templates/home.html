@@ -31,6 +31,16 @@
     <![endif]-->
     <style>
 
+        .mySlides>img{
+            width:100%;
+            /*maybe some animation?*/
+            animation: balloon .5s ease;
+        }
+        .sub-nav>img{
+            width:5em;
+            height:3.5em;
+        }
+
         section.main .sub-nav {
             position: relative;
             text-align: center;
@@ -67,18 +77,6 @@
             margin: 0;
         }
 
-        /*maybe some animation?*/
-        #story1 {
-            animation: balloon .5s ease;
-        }
-
-        #story2 {
-            animation: balloon .5s ease;
-        }
-
-        #story3 {
-            animation: balloon .5s ease;
-        }
 
         @keyframes balloon {
             0% {
@@ -167,51 +165,102 @@
         <div id="couple" class="col-xs-10">
             <!--NAVIGATION BAR -->
             <nav id="sub-nav" class="sub-nav" role="navigation">
-                <img id="nav-pic-1" src="../static/img/temp/koala.jpg" th:src="@{/img/temp/koala.jpg}"
-                     style="width: 7em; height: 5em"/>
-                <img id="nav-pic-2" src="../static/img/temp/random.jpeg" th:src="@{/img/temp/random.jpeg}"
-                     style="width: 7em; height: 5em"/>
-                <img id="nav-pic-3" src="../static/img/temp/koala.jpg" th:src="@{/img/temp/koala.jpg}"
-                     style="width: 7em; height: 5em"/>
-                <img id="nav-pic-4" src="../static/img/Story/4Fourth.jpg" th:src="@{/img/Story/4Fourth.jpg}"
-                     style="width: 7em; height: 5em"/>
-                <img id="nav-pic-5" src="../static/img/Story/5Fifth.jpg" th:src="@{/img/Story/5Fifth.jpg}"
-                     style="width: 7em; height: 5em"/>
+                <img id="nav-pic-1" src="//c1.staticflickr.com/5/4378/36720093822_3e9c5a3cd9_n.jpg"/>
+                <img id="nav-pic-2" src="//c1.staticflickr.com/5/4371/36751177891_80d476ae77_n.jpg"/>
+                <img id="nav-pic-3" src="//c1.staticflickr.com/5/4409/36751176961_99289c9c3b_n.jpg"/>
+                <img id="nav-pic-4" src="//c1.staticflickr.com/5/4411/36890917045_29ceb66518_n.jpg"/>
+                <img id="nav-pic-5" src="//c1.staticflickr.com/5/4401/36765878926_8beb52a5cb_n.jpg"/>
+                <img id="nav-pic-6" src="//c1.staticflickr.com/5/4432/36765877386_689f7496ca_n.jpg"/>
+                <img id="nav-pic-7" src="//c1.staticflickr.com/5/4419/36765875816_80fafa0289_n.jpg"/>
+                <img id="nav-pic-8" src="//c1.staticflickr.com/5/4425/36765873046_16583d9c0f_n.jpg"/>
+                <img id="nav-pic-9" src="//c1.staticflickr.com/5/4400/36557328220_f17572062f_n.jpg"/>
+                <img id="nav-pic-10" src="//c1.staticflickr.com/5/4361/36814044751_b92c34a27f_n.jpg"/>
+                <img id="nav-pic-11" src="//c1.staticflickr.com/5/4341/36557491430_fcdaa89cca_n.jpg"/>
+                <img id="nav-pic-12" src="//c1.staticflickr.com/5/4353/36557490620_557446d4ab_n.jpg"/>
+                <img id="nav-pic-13" src="//c1.staticflickr.com/5/4413/36782578362_8174a77b06_n.jpg"/>
+                <img id="nav-pic-14" src="//c1.staticflickr.com/5/4390/36814039661_ce8fef1bf7_n.jpg"/>
+                <img id="nav-pic-15" src="//c1.staticflickr.com/5/4421/36145332583_06663baa07_n.jpg"/>
             </nav>
 
             <!--THE REAL MAIN CONTENT-->
             <div id="couple-stories">
                 <br/>
                 <!--THE FIRST IMAGE-->
-                <div class="mySlides" id="story1" style="position:absolute;">
-                    <img id="pic-1" src="../static/img/temp/koala.jpg" th:src="@{/img/temp/koala.jpg}"
-                         style="width: 75%"/>
-                    <div style="width: 20%; float:right">Description of Picture 1</div>
+                <!--<div class="mySlides" id="story1" style="position:absolute;">-->
+                <div class="mySlides" id="story1" >
+                    <img src="//c1.staticflickr.com/5/4378/36720093822_3e9c5a3cd9_b.jpg" />
+                    <div>Description of Picture 1</div>
                 </div>
                 <!--THE SECOND IMAGE-->
-                <div class="mySlides" id="story2" style="position:absolute;">
-                    <img id="pic-2" src="../static/img/temp/random.jpeg" th:src="@{/img/temp/random.jpeg}"
-                         style="width: 75%"/>
-                    <div style="width: 20%; float:right">Description of Picture 2</div>
+                <div class="mySlides" id="story2">
+                    <img src="//c1.staticflickr.com/5/4371/36751177891_80d476ae77_b.jpg" />
+                    <div>Description of Picture 2</div>
                 </div>
                 <!--THE THIRD IMAGE-->
-                <div class="mySlides" id="story3" style="position:absolute;">
-                    <img id="pic-3" src="../static/img/temp/koala.jpg" th:src="@{/img/temp/koala.jpg}"
-                         style="width: 75%"/>
-                    <div style="width: 20%; float:right">Description of Picture 3</div>
+                <div class="mySlides" id="story3" >
+                    <img src="//c1.staticflickr.com/5/4409/36751176961_99289c9c3b_b.jpg" />
+                    <div>Description of Picture 3</div>
                 </div>
                 <!--THE FOURTH IMAGE-->
-                <div class="mySlides" id="story4" style="position:absolute;">
-                    <img id="pic-4" src="../static/img/Story/4Fourth.jpg" th:src="@{/img/Story/4Fourth.jpg}"
-                         style="width: 75%"/>
-                    <div style="width: 20%; float:right">Description of Picture 4</div>
+                <div class="mySlides" id="story4" >
+                    <img src="//c1.staticflickr.com/5/4411/36890917045_29ceb66518_c.jpg" />
+                    <div >Description of Picture 4</div>
                 </div>
                 <!--THE FIFTH IMAGE-->
-                <div class="mySlides" id="story5" style="position:absolute;">
-                    <img id="pic-5" src="../static/img/Story/5Fifth.jpg" th:src="@{/img/Story/5Fifth.jpg}"
-                         style="width: 75%;"/>
-                    <div style="width: 20%; float:right">Description of Picture 5</div>
+                <div class="mySlides" id="story5" >
+                    <img src="//c1.staticflickr.com/5/4401/36765878926_ff8d5d5039_h.jpg" />
+                    <div >Description of Picture 5</div>
                 </div>
+                <!--THE SIXTH IMAGE-->
+                <div class="mySlides" id="story6" >
+                    <img  src="//c1.staticflickr.com/5/4432/36765877386_7905166926_h.jpg" />
+                    <div >Description of Picture 6</div>
+                </div>
+                <!--THE SEVENTH IMAGE-->
+                <div class="mySlides" id="story7" >
+                    <img src="//c1.staticflickr.com/5/4419/36765875816_80fafa0289_c.jpg" />
+                    <div >Description of Picture 6</div>
+                </div>
+                <!--THE EIGHTH IMAGE-->
+                <div class="mySlides" id="story8" >
+                    <img src="//c1.staticflickr.com/5/4425/36765873046_16583d9c0f_c.jpg" />
+                    <div >Description of Picture 6</div>
+                </div>
+                <!--THE NINTH IMAGE-->
+                <div class="mySlides" id="story9" >
+                    <img src="//c1.staticflickr.com/5/4400/36557328220_26d782a80d_h.jpg" />
+                    <div >Description of Picture 6</div>
+                </div>
+                <!--THE TENTH IMAGE-->
+                <div class="mySlides" id="story10" >
+                    <img src="//c1.staticflickr.com/5/4361/36814044751_b92c34a27f_c.jpg" />
+                    <div >Description of Picture 6</div>
+                </div>
+                <!--THE ELEVENTH IMAGE-->
+                <div class="mySlides" id="story11" >
+                    <img src="//c1.staticflickr.com/5/4341/36557491430_fcdaa89cca_c.jpg" />
+                    <div >Description of Picture 6</div>
+                </div><!--THE TWELVETH IMAGE-->
+                <div class="mySlides" id="story12" >
+                    <img src="//c1.staticflickr.com/5/4353/36557490620_59d32da947_h.jpg" />
+                    <div >Description of Picture 6</div>
+                </div>
+                <!--THE THIRTEENTH IMAGE-->
+                <div class="mySlides" id="story13" >
+                    <img src="//c1.staticflickr.com/5/4413/36782578362_8174a77b06_z.jpg" />
+                    <div >Description of Picture 6</div>
+                </div>
+                <!--THE FOURTEENTH IMAGE-->
+                <div class="mySlides" id="story14" >
+                    <img src="//c1.staticflickr.com/5/4390/36814039661_ce8fef1bf7_b.jpg" />
+                    <div >Description of Picture 14</div>
+                </div>
+                <!--THE FIFTEENTH IMAGE-->
+                <div class="mySlides" id="story15" >
+                    <img src="//c1.staticflickr.com/5/4421/36145332583_06663baa07_c.jpg" />
+                    <div >Description of Picture 15</div>
+                </div>
+
             </div>
 
             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>

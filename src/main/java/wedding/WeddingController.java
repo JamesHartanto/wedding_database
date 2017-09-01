@@ -71,7 +71,7 @@ public class WeddingController {
     }
 
     @PostMapping("/rsvp2")
-    public String rsvp2(String name, String attendingAnswer, String food, String allergies,
+    public String rsvp2(Model model, String name, String attendingAnswer, String food, String allergies,
                         String guestName, String guestFood, String guestAllergies,
                         String roomBlockAnswer, String song, String email, String bringGuestAnswer){
         Guest guest = new Guest(name, attendingAnswer, food, allergies, roomBlockAnswer, song, email, guestName, guestFood, guestAllergies);
@@ -84,6 +84,8 @@ public class WeddingController {
         }
 
         weddingRepository.updateGuest(guest);
+
+        model.addAttribute("attending", attendingAnswer);
 
         return "rsvp2";
     }

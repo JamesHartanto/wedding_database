@@ -98,9 +98,12 @@
 <br/>
 <br/>
 <div class="main">
-    <div th:text="${attending}"></div>
-    SUCCESSS
-    <div th:text="${roomBlock}"></div>
+    <div th:if="${attendingAnswer == 'Yes'}">
+        Thank you for joining our celebration!
+    </div>
+    <div th:if="${attendingAnswer == 'No'}">
+        Maybe next time :(
+    </div>
 </div>
 
 <!--jQuery -->
