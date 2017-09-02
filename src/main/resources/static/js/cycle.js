@@ -39,8 +39,8 @@ navpic9.addEventListener("click", navpicture9);
 navpic10.addEventListener("click", navpicture10);
 navpic11.addEventListener("click", navpicture11);
 navpic12.addEventListener("click", navpicture12);
-navpic11.addEventListener("click", navpicture13);
-navpic12.addEventListener("click", navpicture14);
+navpic13.addEventListener("click", navpicture13);
+navpic14.addEventListener("click", navpicture14);
 
 var stories = [story1,story2,story3,story4,story5,story6,story7,story8,story9,story10,story11,story12,story13,story14];
 
