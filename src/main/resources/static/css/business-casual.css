@@ -226,3 +226,11 @@ footer p {
         clear: both;
     }
 }
+
+.indented {
+    text-align: center;
+    margin-top:4em;
+}
+#and{
+    font-size: 9pt;
+}
