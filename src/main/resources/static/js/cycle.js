@@ -23,6 +23,8 @@ var story9 = document.getElementById("story9");
 var story10 = document.getElementById("story10");
 var story11 = document.getElementById("story11");
 var story12 = document.getElementById("story12");
+var story13 = document.getElementById("story13");
+var story14 = document.getElementById("story14");
 
 // Adding a "click" event listener to "nav-pics"
 navpic1.addEventListener("click", navpicture1);
@@ -37,8 +39,10 @@ navpic9.addEventListener("click", navpicture9);
 navpic10.addEventListener("click", navpicture10);
 navpic11.addEventListener("click", navpicture11);
 navpic12.addEventListener("click", navpicture12);
+navpic11.addEventListener("click", navpicture13);
+navpic12.addEventListener("click", navpicture14);
 
-var stories = [story1,story2,story3,story4,story5,story6,story7,story8,story9,story10,story11,story12];
+var stories = [story1,story2,story3,story4,story5,story6,story7,story8,story9,story10,story11,story12,story13,story14];
 
 // The functions are called whenever "click" event is triggered.
 function navpicture1() {
@@ -128,6 +132,20 @@ function navpicture12() {
         stories[i].style.display = "none";
     }
     story12.style.display = "block";
+}
+function navpicture13() {
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
+    story13.style.display = "block";
+}
+function navpicture14() {
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
+    story14.style.display = "block";
 }
 
 var slideIndex = 1;
