@@ -9,6 +9,14 @@ var navpic8 = document.getElementById("nav-pic-8");
 var navpic9 = document.getElementById("nav-pic-9");
 var navpic10 = document.getElementById("nav-pic-10");
 var navpic11 = document.getElementById("nav-pic-11");
+var navpic12 = document.getElementById("nav-pic-12");
+var navpic13 = document.getElementById("nav-pic-13");
+var navpic14 = document.getElementById("nav-pic-14");
+var navpic15 = document.getElementById("nav-pic-15");
+var navpic16 = document.getElementById("nav-pic-16");
+var navpic17 = document.getElementById("nav-pic-17");
+var navpic18 = document.getElementById("nav-pic-18");
+var navpic19 = document.getElementById("nav-pic-19");
 
 var story1 = document.getElementById("story1");
 var story2 = document.getElementById("story2");
@@ -21,6 +29,14 @@ var story8 = document.getElementById("story8");
 var story9 = document.getElementById("story9");
 var story10 = document.getElementById("story10");
 var story11 = document.getElementById("story11");
+var story12 = document.getElementById("story12");
+var story13 = document.getElementById("story13");
+var story14 = document.getElementById("story14");
+var story15 = document.getElementById("story15");
+var story16 = document.getElementById("story16");
+var story17 = document.getElementById("story17");
+var story18 = document.getElementById("story18");
+var story19 = document.getElementById("story19");
 
 // Adding a "click" event listener to "nav-pics"
 navpic1.addEventListener("click", navpicture1);
@@ -34,155 +50,156 @@ navpic8.addEventListener("click", navpicture8);
 navpic9.addEventListener("click", navpicture9);
 navpic10.addEventListener("click", navpicture10);
 navpic11.addEventListener("click", navpicture11);
+navpic12.addEventListener("click", navpicture12);
+navpic13.addEventListener("click", navpicture13);
+navpic14.addEventListener("click", navpicture14);
+navpic15.addEventListener("click", navpicture15);
+navpic16.addEventListener("click", navpicture16);
+navpic17.addEventListener("click", navpicture17);
+navpic18.addEventListener("click", navpicture18);
+navpic19.addEventListener("click", navpicture19);
 
+var stories = [story1,story2,story3,story4,story5,story6,story7,story8,story9,story10,story11,story12,story13,story14,story15,story16,story17,story18,story19];
 
 // The functions are called whenever "click" event is triggered.
 function navpicture1() {
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
     story1.style.display = "block";
-    story2.style.display = "none";
-    story3.style.display = "none";
-    story4.style.display = "none";
-    story5.style.display = "none";
-    story6.style.display = "none";
-    story7.style.display = "none";
-    story8.style.display = "none";
-    story9.style.display = "none";
-    story10.style.display = "none";
-    story11.style.display = "none";
 }
 
 function navpicture2() {
-    story1.style.display = "none";
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
     story2.style.display = "block";
-    story3.style.display = "none";
-    story4.style.display = "none";
-    story5.style.display = "none";
-    story6.style.display = "none";
-    story7.style.display = "none";
-    story8.style.display = "none";
-    story9.style.display = "none";
-    story10.style.display = "none";
-    story11.style.display = "none";
 }
 
 function navpicture3() {
-    story1.style.display = "none";
-    story2.style.display = "none";
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
     story3.style.display = "block";
-    story4.style.display = "none";
-    story5.style.display = "none";
-    story6.style.display = "none";
-    story7.style.display = "none";
-    story8.style.display = "none";
-    story9.style.display = "none";
-    story10.style.display = "none";
-    story11.style.display = "none";
 }
 
 function navpicture4() {
-    story1.style.display = "none";
-    story2.style.display = "none";
-    story3.style.display = "none";
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
     story4.style.display = "block";
-    story5.style.display = "none";
-    story6.style.display = "none";
-    story7.style.display = "none";
-    story8.style.display = "none";
-    story9.style.display = "none";
-    story10.style.display = "none";
-    story11.style.display = "none";
 }
 function navpicture5() {
-    story1.style.display = "none";
-    story2.style.display = "none";
-    story3.style.display = "none";
-    story4.style.display = "none";
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
     story5.style.display = "block";
-    story6.style.display = "none";
-    story7.style.display = "none";
-    story8.style.display = "none";
-    story9.style.display = "none";
-    story10.style.display = "none";
-    story11.style.display = "none";
 }
 function navpicture6() {
-    story1.style.display = "none";
-    story2.style.display = "none";
-    story3.style.display = "none";
-    story4.style.display = "none";
-    story5.style.display = "none";
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
     story6.style.display = "block";
-    story7.style.display = "none";
-    story8.style.display = "none";
-    story9.style.display = "none";
-    story10.style.display = "none";
-    story11.style.display = "none";
 }
 function navpicture7() {
-    story1.style.display = "none";
-    story2.style.display = "none";
-    story3.style.display = "none";
-    story4.style.display = "none";
-    story5.style.display = "none";
-    story6.style.display = "none";
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
     story7.style.display = "block";
-    story8.style.display = "none";
-    story9.style.display = "none";
-    story10.style.display = "none";
-    story11.style.display = "none";
 }
 function navpicture8() {
-    story1.style.display = "none";
-    story2.style.display = "none";
-    story3.style.display = "none";
-    story4.style.display = "none";
-    story5.style.display = "none";
-    story6.style.display = "none";
-    story7.style.display = "none";
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
     story8.style.display = "block";
-    story9.style.display = "none";
-    story10.style.display = "none";
-    story11.style.display = "none";
 }
 function navpicture9() {
-    story1.style.display = "none";
-    story2.style.display = "none";
-    story3.style.display = "none";
-    story4.style.display = "none";
-    story5.style.display = "none";
-    story6.style.display = "none";
-    story7.style.display = "none";
-    story8.style.display = "none";
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
     story9.style.display = "block";
-    story10.style.display = "none";
-    story11.style.display = "none";
 }
 function navpicture10() {
-    story1.style.display = "none";
-    story2.style.display = "none";
-    story3.style.display = "none";
-    story4.style.display = "none";
-    story5.style.display = "none";
-    story6.style.display = "none";
-    story7.style.display = "none";
-    story8.style.display = "none";
-    story9.style.display = "none";
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
     story10.style.display = "block";
-    story11.style.display = "none";
 }
 
 function navpicture11() {
-    story1.style.display = "none";
-    story2.style.display = "none";
-    story3.style.display = "none";
-    story4.style.display = "none";
-    story5.style.display = "none";
-    story6.style.display = "none";
-    story7.style.display = "none";
-    story8.style.display = "none";
-    story9.style.display = "none";
-    story10.style.display = "none";
-    story11.style.display = "block";
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
+    story12.style.display = "block";
+}
+function navpicture12() {
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
+    story12.style.display = "block";
+}
+
+function navpicture13() {
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
+    story13.style.display = "block";
+}
+
+function navpicture14() {
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
+    story14.style.display = "block";
+}
+function navpicture15() {
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
+    story15.style.display = "block";
+}
+function navpicture16() {
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
+    story16.style.display = "block";
+}
+function navpicture17() {
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
+    story17.style.display = "block";
+}
+function navpicture18() {
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
+    story18.style.display = "block";
+}
+function navpicture19() {
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
+    story19.style.display = "block";
 }
 
 var slideIndex = 1;
