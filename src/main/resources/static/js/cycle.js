@@ -10,6 +10,8 @@ var navpic9 = document.getElementById("nav-pic-9");
 var navpic10 = document.getElementById("nav-pic-10");
 var navpic11 = document.getElementById("nav-pic-11");
 var navpic12 = document.getElementById("nav-pic-12");
+var navpic13 = document.getElementById("nav-pic-13");
+var navpic14 = document.getElementById("nav-pic-14");
 
 var story1 = document.getElementById("story1");
 var story2 = document.getElementById("story2");
