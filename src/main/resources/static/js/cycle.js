@@ -12,6 +12,7 @@ var navpic11 = document.getElementById("nav-pic-11");
 var navpic12 = document.getElementById("nav-pic-12");
 var navpic13 = document.getElementById("nav-pic-13");
 var navpic14 = document.getElementById("nav-pic-14");
+var navpic15 = document.getElementById("nav-pic-15");
 
 var story1 = document.getElementById("story1");
 var story2 = document.getElementById("story2");
@@ -27,6 +28,7 @@ var story11 = document.getElementById("story11");
 var story12 = document.getElementById("story12");
 var story13 = document.getElementById("story13");
 var story14 = document.getElementById("story14");
+var story15 = document.getElementById("story15");
 
 // Adding a "click" event listener to "nav-pics"
 navpic1.addEventListener("click", navpicture1);
@@ -43,8 +45,9 @@ navpic11.addEventListener("click", navpicture11);
 navpic12.addEventListener("click", navpicture12);
 navpic13.addEventListener("click", navpicture13);
 navpic14.addEventListener("click", navpicture14);
+navpic15.addEventListener("click", navpicture15);
 
-var stories = [story1,story2,story3,story4,story5,story6,story7,story8,story9,story10,story11,story12,story13,story14];
+var stories = [story1,story2,story3,story4,story5,story6,story7,story8,story9,story10,story11,story12,story13,story14,story15];
 
 // The functions are called whenever "click" event is triggered.
 function navpicture1() {
@@ -148,6 +151,13 @@ function navpicture14() {
         stories[i].style.display = "none";
     }
     story14.style.display = "block";
+}
+function navpicture15() {
+    var i;
+    for (i = 0; i < stories.length; i++) {
+        stories[i].style.display = "none";
+    }
+    story15.style.display = "block";
 }
 
 var slideIndex = 1;
