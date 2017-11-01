@@ -56,6 +56,23 @@ public class WeddingRepository {
                         resultSet.getString("guestfood"),
                         resultSet.getString("guestallergies")));
     }
+
+    public Guest getAGuestGuest(String name){
+        return jdbcTemplate.queryForObject("SELECT * FROM guestinfo WHERE guestname = ?",
+                new Object[]{name},
+                (resultSet, i) -> new Guest(
+                        resultSet.getString("name"),
+                        resultSet.getString("attending"),
+                        resultSet.getString("food"),
+                        resultSet.getString("allergies"),
+                        resultSet.getString("roomblock"),
+                        resultSet.getString("song"),
+                        resultSet.getString("email"),
+                        resultSet.getBoolean("guestallow"),
+                        resultSet.getString("guestname"),
+                        resultSet.getString("guestfood"),
+                        resultSet.getString("guestallergies")));
+    }
     
 //    // GIFTS
 //    public void updateGift(String name, Integer cost, String buyer){

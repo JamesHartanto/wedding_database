@@ -30,6 +30,14 @@ public class WeddingController {
         return names;
     }
 
+    public List<String> guestList(){
+        List<String> names = new ArrayList<>();
+        for (int x = 0; x < weddingRepository.listGuests().size(); x = x + 1){
+            names.add(weddingRepository.listGuests().get(x).getGuestName().toLowerCase());
+        }
+        return names;
+    }
+
     // homepage
     @RequestMapping("/home")
     public String homePage(){
@@ -55,11 +63,20 @@ public class WeddingController {
 
     @PostMapping("/rsvp1")
     public String rsvp1(Model model, String name){
+        // The main guest enters his/her name
         if(nameList().contains(name.toLowerCase())) {
 
             Guest guest = weddingRepository.getAGuest(name.toLowerCase());
 
             // modeling the guest
+            model.addAttribute("guest", guest);
+
+            // The guest's guest enters his/her name
+        } else if(guestList().contains(name.toLowerCase())){
+
+            Guest guest = weddingRepository.getAGuestGuest(name.toLowerCase());
+
+            // modeling the main guest
             model.addAttribute("guest", guest);
 
         } else{
