@@ -33,7 +33,9 @@ public class WeddingController {
     public List<String> guestList(){
         List<String> names = new ArrayList<>();
         for (int x = 0; x < weddingRepository.listGuests().size(); x = x + 1){
-            names.add(weddingRepository.listGuests().get(x).getGuestName().toLowerCase());
+            if(weddingRepository.listGuests().get(x).getGuestName() != null) {
+                names.add(weddingRepository.listGuests().get(x).getGuestName().toLowerCase());
+            }
         }
         return names;
     }
@@ -66,7 +68,7 @@ public class WeddingController {
         // The main guest enters his/her name
         if(nameList().contains(name.toLowerCase())) {
 
-            Guest guest = weddingRepository.getAGuest(name.toLowerCase());
+            Guest guest = weddingRepository.getAGuest(name);
 
             // modeling the guest
             model.addAttribute("guest", guest);
@@ -74,7 +76,7 @@ public class WeddingController {
             // The guest's guest enters his/her name
         } else if(guestList().contains(name.toLowerCase())){
 
-            Guest guest = weddingRepository.getAGuestGuest(name.toLowerCase());
+            Guest guest = weddingRepository.getAGuestGuest(name);
 
             // modeling the main guest
             model.addAttribute("guest", guest);
