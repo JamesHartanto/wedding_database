@@ -40,6 +40,20 @@ public class WeddingController {
         return names;
     }
 
+    // Capitalize first letter of each word
+    public String CapsFirst(String str) {
+        String[] words = str.split(" ");
+        StringBuilder ret = new StringBuilder();
+        for(int i = 0; i < words.length; i++) {
+            ret.append(Character.toUpperCase(words[i].charAt(0)));
+            ret.append(words[i].substring(1));
+            if(i < words.length - 1) {
+                ret.append(' ');
+            }
+        }
+        return ret.toString();
+    }
+
     // homepage
     @RequestMapping("/home")
     public String homePage(){
@@ -65,9 +79,13 @@ public class WeddingController {
 
     @PostMapping("/rsvp1")
     public String rsvp1(Model model, String name){
+        // capitalize first letter of the name
+        name = CapsFirst(name);
+
         // The main guest enters his/her name
         if(nameList().contains(name.toLowerCase())) {
 
+            // get the guest
             Guest guest = weddingRepository.getAGuest(name);
 
             // modeling the guest
