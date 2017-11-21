@@ -31,6 +31,11 @@
 
     <style>
         .answers {margin-left: 10em; margin-right: 10em;}
+        #answerYes, #answerNo{text-transform: uppercase;
+            font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 1px;  }
 
         @media(max-width: 850px){
             .answers{
@@ -90,7 +95,7 @@
                     <a href="entourage.html" th:href="@{/entourage}">ENTOURAGE</a>
                 </li>
                 <li>
-                    <a href="rsvp.html" th:href="@{/rsvp}">RSVP</a>
+                    <a href="rsvp.html" th:href="@{/rsvp}"><strong>RSVP</strong></a>
                 </li>
                 <li>
                     <a href="photos.html" th:href="@{/photos}">PHOTOS</a>
@@ -109,13 +114,13 @@
 </nav>
 
 <br/>
-<br/>
+
 <div class="answers">
-    <div th:if="${attending == 'Yes'}">
+    <div id="answerYes" th:if="${attending == 'Yes'}">
         Thank you for joining our celebration!
     </div>
-    <div th:if="${attending == 'No'}">
-        At least you will be there in spirit!
+    <div id="answerNo" th:if="${attending == 'No'}">
+        No worries! At least you will be there in spirit!
     </div>
 </div>
 
