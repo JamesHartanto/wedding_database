@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>guestlist</title>
+</head>
+<body>
+
+<table>
+<tr>
+<th>name</th>
+<th>attending</th>
+<th>food</th>
+<th>allergies</th>
+<th>roomBlock</th>
+<th>song</th>
+<th>email</th>
+<th>guestName</th>
+<th>guestFood</th>
+<th>guestAllergies</th>
+</tr>
+<tr th:each="guest:${guests}">
+<td th:text="${guest.getName()}">Name</td>
+<td th:text="${guest.getAttending()}">attending</td>
+<td th:text="${guest.getFood()}">food</td>
+<td th:text="${guest.getAllergies()}">allergies</td>
+<td th:text="${guest.getRoomBlock()}">roomBlock</td>
+<td th:text="${guest.getSong()}">song</td>
+<td th:text="${guest.getEmail()}">email</td>
+<td th:text="${guest.getGuestName()}">guestName</td>
+<td th:text="${guest.getGuestFood()}">guestFood</td>
+<td th:text="${guest.getGuestAllergies()}">guestAllergies</td>
+</tr>
+</table>
+
+</body>
+</html>
