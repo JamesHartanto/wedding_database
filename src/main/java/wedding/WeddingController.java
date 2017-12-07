@@ -162,7 +162,8 @@ public class WeddingController {
     }
 
     @RequestMapping("/guestlist")
-    public String guestlist(){
+    public String guestlist(Model model){
+        model.addAttribute("guests",weddingRepository.listGuests());
         return "guestlist";
     }
 }
