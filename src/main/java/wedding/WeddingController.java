@@ -160,4 +160,9 @@ public class WeddingController {
     public String directions(){
         return "directions";
     }
+
+    @RequestMapping("/guestlist")
+    public String guestlist(){
+        return "guestlist";
+    }
 }
