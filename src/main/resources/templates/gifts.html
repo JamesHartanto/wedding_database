@@ -103,36 +103,23 @@
 
     <br />
 
-    <div class="container">
-        <h1>Coming soon...</h1>
-        <!--<a href="https://www.blueprintregistry.com/registry/Test01.11.18">View Registry</a>-->
+    <div class="box">
+        <h3 style="text-align: center">
+            Your love, laughter and company on our wedding day are the greatest gifts of all!
+            However, should you wish to help us celebrate with a gift, a few online/offline options are available below:
+        </h3>
+        <br/>
+        <hr />
+        <h2 class="intro-text text-center" id="online" style="font-weight: lighter">#themillenialway</h2>
+        <hr />
+        <div id="onlineInfo" style="text-align: center" th:hidden="true">For your convenience we've set up an online wedding registry <a href="https://www.blueprintregistry.com/registry/HapaLeeHartanto" target="_blank">here</a>!</div>
 
+        <hr id="aLine" th:hidden="true" />
 
-        <!--<form action="gifts.html" id="searchbar" th:action="@{/gifts}" method="get">-->
-            <!--<label for="search">Search for a name:</label>-->
-            <!--<input type="search" name="search" id="search" value="" placeholder="For Steven and Nancy" th:value="${search}"/>-->
-            <!--<input type="submit" name="submit" value="Search!" />-->
-        <!--</form>-->
-
-        <!--<table th:if="${empty} != 0">-->
-            <!--<tr>-->
-                <!--<th>Name</th>-->
-                <!--<th>Cost</th>-->
-                <!--<th>Buyer</th>-->
-            <!--</tr>-->
-
-            <!--<tr>-->
-                <!--<th>Name1</th>-->
-                <!--<th>Cost1</th>-->
-                <!--<th>Buyer1</th>-->
-            <!--</tr>-->
-
-            <!--<tr th:remove="all">-->
-                <!--<th>Name2</th>-->
-                <!--<th>Cost2</th>-->
-                <!--<th>Buyer2</th>-->
-            <!--</tr>-->
-        <!--</table>-->
+        <h2 class="intro-text text-center" id="offline" style="font-weight: lighter">#theoldfashionedway</h2>
+        <hr />
+        <div id="offlineInfo" style="text-align: center" th:hidden="true" >Alternatively, if choosing a gift is not your cup of tea but you still wish to contribute, we will have a table set up for cash gifts on the day of the wedding.
+            As is customary in Chinese wedding culture, red envelopes will be provided for any cash gifts!</div>
 
     </div>
 
@@ -142,6 +129,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="../static/js/bootstrap.min.js" th:src="@{js/bootstrap.min.js}"></script>
 
+    <script src="../static/js/gifts.js" th:src="@{js/gifts.js}"></script>
 </body>
 
 </html>
