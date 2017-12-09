@@ -135,23 +135,7 @@ public class WeddingController {
 
     // not sure yet... will complete later once gifts are ready
     @RequestMapping("/gifts")
-    public String gifts(Model model){
-
-        model.addAttribute("guests",weddingRepository.listGuests());
-
-//        // Getting data from database
-//        List<Gifts> listOfGifts = weddingRepository.listGifts(search);
-//
-//        // If there are no results
-//        if (listOfGifts.size() == 0){
-//            model.addAttribute("empty",0);
-//            return "gifts";
-//        }
-//
-//        // return data for non-empty table
-//        model.addAttribute("empty",1);
-//        model.addAttribute("listOfGifts",listOfGifts);
-
+    public String gifts(){
         return "gifts";
     }
 
