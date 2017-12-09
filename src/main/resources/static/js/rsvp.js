@@ -6,14 +6,14 @@ var attendingYes = document.getElementById("attendingYes");
 var attendingNo = document.getElementById("attendingNo");
 var attendingAnswer = document.getElementById("attendingAnswer");
 
+var roomBlockYes = document.getElementById("roomBlockYes");
+var roomBlockNo = document.getElementById("roomBlockNo");
+var roomBlockAnswer = document.getElementById("roomBlockAnswer");
+
 var bringGuestYes = document.getElementById("bringGuestYes");
 var bringGuestNo = document.getElementById("bringGuestNo");
 var bringGuestAnswer = document.getElementById("bringGuestAnswer");
 var guest_inputs = document.getElementById("guest_inputs");
-
-var roomBlockYes = document.getElementById("roomBlockYes");
-var roomBlockNo = document.getElementById("roomBlockNo");
-var roomBlockAnswer = document.getElementById("roomBlockAnswer");
 
 var room_block = document.getElementById("room_block");
 var food_preference = document.getElementById("food_preference");
@@ -25,10 +25,10 @@ var bring_guest = document.getElementById("bring_guest");
 // Event listeners
 attendingYes.addEventListener("click", attendYes);
 attendingNo.addEventListener("click", attendNo);
-bringGuestYes.addEventListener("click", guestYes);
-bringGuestNo.addEventListener("click", guestNo);
 roomBlockYes.addEventListener("click", blockYes);
 roomBlockNo.addEventListener("click", blockNo);
+bringGuestYes.addEventListener("click", guestYes);
+bringGuestNo.addEventListener("click", guestNo);
 
 // Functions
 function attendYes() {
@@ -55,6 +55,18 @@ function attendNo() {
     bring_guest.style.display = "none";
 }
 
+function blockYes() {
+    roomBlockYes.style = "background-color: #4CAF50";
+    roomBlockNo.style = "background-color: white";
+    roomBlockAnswer.value = "Yes";
+}
+
+function blockNo() {
+    roomBlockYes.style = "background-color: white";
+    roomBlockNo.style = "background-color: #f44336";
+    roomBlockAnswer.value = "No";
+}
+
 function guestYes() {
     bringGuestYes.style = "background-color: #4CAF50";
     bringGuestNo.style = "background-color: white";
@@ -67,16 +79,4 @@ function guestNo() {
     bringGuestNo.style = "background-color: #f44336";
     bringGuestAnswer.value = "No";
     guest_inputs.style.display = "none";
-}
-
-function blockYes() {
-    roomBlockYes.style = "background-color: #4CAF50";
-    roomBlockNo.style = "background-color: white";
-    roomBlockAnswer.value = "Yes";
-}
-
-function blockNo() {
-    roomBlockYes.style = "background-color: white";
-    roomBlockNo.style = "background-color: #f44336";
-    roomBlockAnswer.value = "No";
 }
