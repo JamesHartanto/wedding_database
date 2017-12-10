@@ -85,6 +85,19 @@ public class WeddingController {
         // The main guest enters his/her name
         if(nameList().contains(name.toLowerCase())) {
 
+            // special case people who have other capitalized letters in their name
+            if (name.equals("James Mccumiskey")){
+                name = "James McCumiskey";
+            } else if (name.equals("Alex Larosa")){
+                name = "Alex LaRosa";
+            } else if (name.equals("Tom Mcfadyen")){
+                name = "Tom McFadyen";
+            } else if (name.equals("Cj Cruz")){
+                name = "CJ Cruz";
+            } else if (name.equals("Jt Vaughn")){
+                name = "JT Vaughn";
+            }
+
             // get the guest
             Guest guest = weddingRepository.getAGuest(name);
 
