@@ -92,7 +92,6 @@ COPY guestinfo (id, name, attending, food, guestname, guestfood, guestallow, all
 2	Shady Lee	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 3	Shu Tong Lee	\N	\N	Sofy Lee	\N	t	\N	\N	\N	\N	\N
 4	Hady Hartanto	\N	\N	Wati Hartanto	\N	t	\N	\N	\N	\N	\N
-1	James Hartanto	Yes	Beef			\N					
 5	Thomas Darden	\N	\N	Jody Darden	\N	t	\N	\N	\N	\N	\N
 6	John Mazzarino	\N	\N	Linda Storm Mazzarino	\N	t	\N	\N	\N	\N	\N
 7	Edmund Waddill	\N	\N	Mollie Waddill	\N	t	\N	\N	\N	\N	\N
@@ -198,6 +197,10 @@ COPY guestinfo (id, name, attending, food, guestname, guestfood, guestallow, all
 107	Kyle Gilley	\N	\N	Stephanie Gilley	\N	t	\N	\N	\N	\N	\N
 108	Ryan Shank	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 109	Matt Benson	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+1	James Hartanto	Yes	BeefWell	\N		\N	None	\N	No	Yes	jameshartanto1993@gmail.com
+110	David Perry	\N	\N	Kathy Perry	\N	t	\N	\N	\N	\N	\N
+111	Liston Peebles	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+112	Kim Shaw	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 \.
 
 
@@ -205,7 +208,7 @@ COPY guestinfo (id, name, attending, food, guestname, guestfood, guestallow, all
 -- Name: guestinfo_id_seq; Type: SEQUENCE SET; Schema: public; Owner: JamesHartanto
 --
 
-SELECT pg_catalog.setval('guestinfo_id_seq', 12, true);
+SELECT pg_catalog.setval('guestinfo_id_seq', 13, true);
 
 
 --
