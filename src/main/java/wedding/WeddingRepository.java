@@ -37,7 +37,7 @@ public class WeddingRepository {
         jdbcTemplate.update("UPDATE guestinfo SET " +
                 "attending=?, food=?, allergies=?, roomblock=?, song=?, email=?, guestname=?, guestfood=?, guestallergies=? WHERE name=?",
                 new Object[]{guest.getAttending(),guest.getFood(),guest.getAllergies(),guest.getRoomBlock(),
-                guest.getSong(),guest.getEmail(),guest.getGuestName(),guest.getFood(),guest.getGuestAllergies(),guest.getName()});
+                guest.getSong(),guest.getEmail(),guest.getGuestName(),guest.getGuestFood(),guest.getGuestAllergies(),guest.getName()});
     }
 
     public Guest getAGuest(String name){
