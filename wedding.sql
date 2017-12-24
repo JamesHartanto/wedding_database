@@ -94,13 +94,10 @@ COPY guestinfo (id, name, attending, food, guestname, guestfood, guestallow, all
 4	Hady Hartanto	\N	\N	Wati Hartanto	\N	t	\N	\N	\N	\N	\N
 5	Thomas Darden	\N	\N	Jody Darden	\N	t	\N	\N	\N	\N	\N
 6	John Mazzarino	\N	\N	Linda Storm Mazzarino	\N	t	\N	\N	\N	\N	\N
-7	Edmund Waddill	\N	\N	Mollie Waddill	\N	t	\N	\N	\N	\N	\N
-8	JT Vaughn	\N	\N	Gracey Vaughn	\N	t	\N	\N	\N	\N	\N
 9	John Linger	\N	\N	\N	\N	t	\N	\N	\N	\N	\N
 10	Jim Fogleman	\N	\N	Mary-Edna Fogleman	\N	t	\N	\N	\N	\N	\N
 11	Jon Spear	\N	\N	Lauren Spear	\N	t	\N	\N	\N	\N	\N
 12	Brent Burgess	\N	\N	Barbara Burgess	\N	t	\N	\N	\N	\N	\N
-13	Tom McFadyen	\N	\N	Mrs McFadyen	\N	t	\N	\N	\N	\N	\N
 14	Vickie Harp	\N	\N	\N	\N	t	\N	\N	\N	\N	\N
 15	Elizabeth Merritt	\N	\N	John Merritt	\N	t	\N	\N	\N	\N	\N
 16	Wendy Carter	\N	\N	\N	\N	t	\N	\N	\N	\N	\N
@@ -112,7 +109,6 @@ COPY guestinfo (id, name, attending, food, guestname, guestfood, guestallow, all
 22	Oliver Pau	\N	\N	Penny Pau	\N	t	\N	\N	\N	\N	\N
 23	Dewey Weaver	\N	\N	Anne Weaver	\N	t	\N	\N	\N	\N	\N
 24	Jeany Kim	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-25	Rima Massou	\N	\N	Alex Barylskiy	\N	t	\N	\N	\N	\N	\N
 26	Chelsea Yin	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 27	Kevin Hong	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 28	CJ Cruz	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
@@ -136,7 +132,6 @@ COPY guestinfo (id, name, attending, food, guestname, guestfood, guestallow, all
 46	Riley Hathaway	\N	\N	Season Hathaway	\N	t	\N	\N	\N	\N	\N
 47	David Huang	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 48	Megan Hoewisch	\N	\N	\N	\N	t	\N	\N	\N	\N	\N
-49	Ryan Hammill	\N	\N	Kathleen McKenzie	\N	t	\N	\N	\N	\N	\N
 50	Jonathan Kim	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 51	Sam Ovenshine	\N	\N	\N	\N	t	\N	\N	\N	\N	\N
 52	Esther Cajahuaringa	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
@@ -187,20 +182,26 @@ COPY guestinfo (id, name, attending, food, guestname, guestfood, guestallow, all
 97	Emily Yuan	\N	\N	Chris Lo	\N	t	\N	\N	\N	\N	\N
 98	Ernest Wang	\N	\N	May Ting	\N	t	\N	\N	\N	\N	\N
 99	Philip Cros	\N	\N	Hwang Eban	\N	t	\N	\N	\N	\N	\N
-100	Benjamin Farrell	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 101	Alyssa Montgomery	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 102	Rachel Garratt	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 103	John Lovato	\N	\N	Hayden Lovato	\N	t	\N	\N	\N	\N	\N
-104	Cody Mackvick	\N	\N	Cara	\N	t	\N	\N	\N	\N	\N
 105	Daniel Yelverton	\N	\N	Laney Yelverton	\N	t	\N	\N	\N	\N	\N
 106	Carlton Satterwhite	\N	\N	Brandy Satterwhite	\N	t	\N	\N	\N	\N	\N
 107	Kyle Gilley	\N	\N	Stephanie Gilley	\N	t	\N	\N	\N	\N	\N
 108	Ryan Shank	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 109	Matt Benson	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-1	James Hartanto	Yes	BeefWell	\N		\N	None	\N	No	Yes	jameshartanto1993@gmail.com
 110	David Perry	\N	\N	Kathy Perry	\N	t	\N	\N	\N	\N	\N
-111	Liston Peebles	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 112	Kim Shaw	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+13	Tom McFadyen	Yes	BeefWell	Mrs  Worthy McFadyen	BeefWell	t		none	No		mcfadyentw@aol.com
+7	Edmund Waddill	Yes	\N	Mollie Waddill	\N	t	Beef Medium	Beef Medium	Yes	Motown, Temptations, My Girl	ewaddill@gmail.com
+25	Rima Barylskiy	\N	\N	Alex Barylskiy	\N	t	\N	\N	\N	\N	\N
+49	Ryan Hammill	\N	\N	Kathleen Hammill	\N	t	\N	\N	\N	\N	\N
+104	Cody Mackvick	\N	\N	Kara Jongkind	\N	t	\N	\N	\N	\N	\N
+111	Lyston Peebles	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+100	Benjamin Farrell	Yes	BeefRare	\N		\N	all of them ;)	\N		Perfect Duet (with Beyonce) - Ed Sheeran	benfarrell01@gmail.com
+1	James Hartanto	Yes	BeefRare	\N		\N	None	\N	No	Anything	jameshartanto1993@gmail.com
+8	JT Vaughn	Yes	BeefWell	Gracey Vaughn	Fish	t			Yes		vaughn.gracey@gmail.com
+113	Stuart Frantz	\N	\N	\N	\N	t	\N	\N	\N	\N	\N
 \.
 
 

@@ -129,7 +129,7 @@ public class WeddingController {
         // checks if guest's guest is attending
         if (weddingRepository.getAGuest(name).isGuestAllow()){
             if (bringGuestAnswer.equals("No")){
-                guest.setGuestName("-");
+                guest.setGuestFood("-");
             }
         }
 
