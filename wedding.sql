@@ -92,8 +92,6 @@ COPY guestinfo (id, name, attending, food, guestname, guestfood, guestallow, all
 2	Shady Lee	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 3	Shu Tong Lee	\N	\N	Sofy Lee	\N	t	\N	\N	\N	\N	\N
 4	Hady Hartanto	\N	\N	Wati Hartanto	\N	t	\N	\N	\N	\N	\N
-5	Thomas Darden	\N	\N	Jody Darden	\N	t	\N	\N	\N	\N	\N
-6	John Mazzarino	\N	\N	Linda Storm Mazzarino	\N	t	\N	\N	\N	\N	\N
 9	John Linger	\N	\N	\N	\N	t	\N	\N	\N	\N	\N
 10	Jim Fogleman	\N	\N	Mary-Edna Fogleman	\N	t	\N	\N	\N	\N	\N
 11	Jon Spear	\N	\N	Lauren Spear	\N	t	\N	\N	\N	\N	\N
@@ -101,42 +99,25 @@ COPY guestinfo (id, name, attending, food, guestname, guestfood, guestallow, all
 14	Vickie Harp	\N	\N	\N	\N	t	\N	\N	\N	\N	\N
 15	Elizabeth Merritt	\N	\N	John Merritt	\N	t	\N	\N	\N	\N	\N
 16	Wendy Carter	\N	\N	\N	\N	t	\N	\N	\N	\N	\N
-17	Amy Biggers	\N	\N	Shan Biggers	\N	t	\N	\N	\N	\N	\N
 18	Scott Steele	\N	\N	Jennifer Steele	\N	t	\N	\N	\N	\N	\N
-19	Bret Batchelder	\N	\N	Virginia Batchelder	\N	t	\N	\N	\N	\N	\N
 20	Andrea Meli	\N	\N	Rick Germain	\N	t	\N	\N	\N	\N	\N
 21	Trista Balmer	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-22	Oliver Pau	\N	\N	Penny Pau	\N	t	\N	\N	\N	\N	\N
 23	Dewey Weaver	\N	\N	Anne Weaver	\N	t	\N	\N	\N	\N	\N
 24	Jeany Kim	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-26	Chelsea Yin	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 27	Kevin Hong	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 28	CJ Cruz	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 29	Eileen Lee	\N	\N	Arthur Chang	\N	t	\N	\N	\N	\N	\N
-30	Jane Ha	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 31	David Wayne	\N	\N	Sandy Enriquez	\N	t	\N	\N	\N	\N	\N
 32	Jenna Nelson	\N	\N	James Aubrey	\N	t	\N	\N	\N	\N	\N
 33	Lisa Gilliland	\N	\N	Chris	\N	t	\N	\N	\N	\N	\N
 34	Lisa Chang	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 35	Lili Rodriguez	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-36	Rebeca Lopez	\N	\N	Benjamin Chung	\N	t	\N	\N	\N	\N	\N
-37	Gloria Mayorga	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-38	Naomi Choi	\N	\N	Jason Lee	\N	t	\N	\N	\N	\N	\N
-39	Andrea Wong	\N	\N	Matthew Lim	\N	t	\N	\N	\N	\N	\N
 40	Megan Boaglio	\N	\N	\N	\N	t	\N	\N	\N	\N	\N
 41	Alex LaRosa	\N	\N	Paul Williams	\N	t	\N	\N	\N	\N	\N
-42	Annika Skye	\N	\N	Josef John	\N	t	\N	\N	\N	\N	\N
-43	Leslie Koh	\N	\N	Joshua Koh	\N	t	\N	\N	\N	\N	\N
-44	Lauren Gunderson	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-45	Larissa Saco	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-46	Riley Hathaway	\N	\N	Season Hathaway	\N	t	\N	\N	\N	\N	\N
-47	David Huang	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 48	Megan Hoewisch	\N	\N	\N	\N	t	\N	\N	\N	\N	\N
 50	Jonathan Kim	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 51	Sam Ovenshine	\N	\N	\N	\N	t	\N	\N	\N	\N	\N
-52	Esther Cajahuaringa	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 53	Nic Arnold	\N	\N	\N	\N	t	\N	\N	\N	\N	\N
-54	Lauren Masopust	\N	\N	Jeremiah Masopust	\N	t	\N	\N	\N	\N	\N
 55	Aiden Lewis	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 56	Adi Tanojo	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 57	Joshua Park	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
@@ -145,7 +126,6 @@ COPY guestinfo (id, name, attending, food, guestname, guestfood, guestallow, all
 60	Holly Goldingay	\N	\N	Jack	\N	t	\N	\N	\N	\N	\N
 61	Teresa Monti	\N	\N	Jack	\N	t	\N	\N	\N	\N	\N
 62	Emily Tran	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-63	Jessica Phan	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 64	Bonnie Groat	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 65	Nik Hasiuk	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 66	Jet Abdo	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
@@ -175,12 +155,7 @@ COPY guestinfo (id, name, attending, food, guestname, guestfood, guestallow, all
 90	Hannah Yung	\N	\N	Erik Wiest	\N	t	\N	\N	\N	\N	\N
 91	Grace Chuang	\N	\N	Kenny	\N	t	\N	\N	\N	\N	\N
 92	Irene Wang	\N	\N	Connor	\N	t	\N	\N	\N	\N	\N
-93	Timothy Chang	\N	\N	Taylor Yang	\N	t	\N	\N	\N	\N	\N
-94	Gary Liou	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-95	Oliver Sheu	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-96	Daniel Cheng	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 97	Emily Yuan	\N	\N	Chris Lo	\N	t	\N	\N	\N	\N	\N
-98	Ernest Wang	\N	\N	May Ting	\N	t	\N	\N	\N	\N	\N
 99	Philip Cros	\N	\N	Hwang Eban	\N	t	\N	\N	\N	\N	\N
 101	Alyssa Montgomery	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 102	Rachel Garratt	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
@@ -194,14 +169,39 @@ COPY guestinfo (id, name, attending, food, guestname, guestfood, guestallow, all
 112	Kim Shaw	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 13	Tom McFadyen	Yes	BeefWell	Mrs  Worthy McFadyen	BeefWell	t		none	No		mcfadyentw@aol.com
 7	Edmund Waddill	Yes	\N	Mollie Waddill	\N	t	Beef Medium	Beef Medium	Yes	Motown, Temptations, My Girl	ewaddill@gmail.com
-25	Rima Barylskiy	\N	\N	Alex Barylskiy	\N	t	\N	\N	\N	\N	\N
 49	Ryan Hammill	\N	\N	Kathleen Hammill	\N	t	\N	\N	\N	\N	\N
-104	Cody Mackvick	\N	\N	Kara Jongkind	\N	t	\N	\N	\N	\N	\N
 111	Lyston Peebles	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
 100	Benjamin Farrell	Yes	BeefRare	\N		\N	all of them ;)	\N		Perfect Duet (with Beyonce) - Ed Sheeran	benfarrell01@gmail.com
 1	James Hartanto	Yes	BeefRare	\N		\N	None	\N	No	Anything	jameshartanto1993@gmail.com
 8	JT Vaughn	Yes	BeefWell	Gracey Vaughn	Fish	t			Yes		vaughn.gracey@gmail.com
-113	Stuart Frantz	\N	\N	\N	\N	t	\N	\N	\N	\N	\N
+104	Cody Mackvick	Yes	BeefRare	Kara Jongkind	BeefWell	t	No	Gluten	No	Boogie shoes	crmackvick@gmail.com
+63	Jessica Phan	Yes	Fish	\N	\N	\N	n/a	\N	Yes	Ed Sheeran obvs	jessica.phan@hotmail.com
+46	Riley Hathaway	Yes	BeefRare	Season Hathaway	Fish	t			No		hathaway.riley@gmail.com
+26	Chelsea Yin	Yes	Fish	\N	\N	\N		\N	No	December, 1963 (Oh What a Night) - The Four Seasons	ehchelsea@gmail.com
+52	Esther Cajahuaringa	Yes	BeefWell	\N	\N	\N		\N	Yes	"From the Ground Up"—Dan + Shay	esther.caja@gmail.com
+44	Lauren Gunderson	Yes	Fish	\N	\N	\N	no	\N	No	uptown funk	lauren.b.gunderson@gmail.com
+113	Stuart Frantz	No	\N		\N	t					
+42	Annika Skye	Yes	BeefWell	Annika John	BeefWell	t		gluten, dairy, soy, eggs, beans :( I just eat meat and veggies and rice. 	No	lecrae	annika.awbrey@gmail.com
+38	Naomi Choi	Yes	BeefRare	Jason Lee	BeefRare	t			No		naomicchoi@gmail.com
+30	Jane Ha	Yes	BeefRare	\N	\N	\N	Nope!	\N	Yes	Some good ol' Bruno Mars!	janeham39@gmail.com
+36	Rebeca Lopez	Yes	BeefWell	Benjamin Chung	BeefRare	t			No	September! :D 	s.rebecalopez@gmail.com
+96	Daniel Cheng	Yes	BeefWell	\N	\N	\N	None	\N	No	What Lovers Do - Maroon 5	danmcheng@gmail.com
+94	Gary Liou	Yes	BeefRare	\N	\N	\N		\N	No		uoilyrag@gmail.com
+98	Ernest Wang	Yes	BeefRare	May Ting	Fish	t				Perfect - Ed Sheeran	ernestywang@gmail.com
+54	Lauren Masopust	Yes	BeefRare	Jeremiah Masopust	BeefRare	t			No	Prince of Peace (LOL JK...kind of)	laurenmasopust@gmail.com
+17	Amy Biggers	No	\N	Shan Biggers	\N	t					
+37	Gloria Mayorga	Yes	BeefWell	\N	\N	\N	Nope	\N	No	You make my dreams by Daryl Hall & John Oates	g.mayorgagarcia@gmail.com
+5	Thomas Darden	Yes	Vegetarian	Jody Darden	-	t			Yes	Pachelbel Canon in D	tfdarden@yahoo.com
+19	Bret Batchelder	Yes	Fish	Virginia Batchelder	-	t			Yes		bbatchelder1@gmail.com
+43	Leslie Koh	Yes	BeefRare	Joshua Koh	\N	t	Peanuts		No		lesandjosh1023@gmail.com
+39	Andrea Wong	Yes	Fish	Matthew Lim	BeefRare	t			No		andi.noelle@gmail.com
+25	Rima Barylskiy	Yes	Fish	Alex Barylskiy	\N	t	No 		No	Yeah by Usher	alexandrima2017@gmail.com
+93	Timothy Chang	Yes	Fish	Taylor Yang	\N	t			No	Thinking Out Loud - Ed Sheeran	timdchang@gmail.com
+22	Oliver Pau	Yes	Fish	Penny Pau	BeefRare	t			Yes		opau@cherokeefund.com
+6	John Mazzarino	Yes	BeefWell	Linda Storm Mazzarino	-	t	None.  Looking forward to having fun!		Yes		jmazzarino@cherokeefund.com
+95	Oliver Sheu	Yes	BeefRare	\N	\N	\N		\N	No	some litty hip hop lol	oliver.sheu@gmail.com
+45	Larissa Saco	Yes	Fish	\N	\N	\N	Nuts	\N	Yes		larissa.saco@gmail.com
+47	David Huang	Yes	BeefRare	\N	\N	t	No	\N	No		huangd85@gmail.com
 \.
 
 

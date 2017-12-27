@@ -111,7 +111,6 @@
         <div class="questions">
             <!--ATTENDING-->
             <div class="row">
-
                 <h4>Attending?</h4>
             </div>
             <div class="answerInputs">
@@ -128,11 +127,11 @@
             <div class="row" id="food_preference" th:hidden="true">
                 <h4>Food Choice</h4>
                 <input type="radio" name="food" id="food1" value="BeefRare" th:checked="${guest.getFood() == 'BeefRare'}"/>
-                <label for="food1">Beef - Medium Rare</label><br/>
+                <label for="food1">Grilled Prime New York Strip - Medium Rare</label><br/>
                 <input type="radio" name="food" id="food2" value="BeefWell" th:checked="${guest.getGuestFood() == 'BeefWell'}" />
-                <label for="food2">Beef - Medium Well</label><br />
+                <label for="food2">Grilled Prime New York Strip - Medium Well</label><br />
                 <input type="radio" name="food" id="food3" value="Fish" th:checked="${guest.getFood() == 'Fish'}"/>
-                <label for="food3">Fish</label><br/>
+                <label for="food3">Miso-Glazed Black Cod</label><br/>
                 <input type="radio" name="food" id="food4" value="Vegetarian" th:checked="${guest.getFood() == 'Vegetarian'}"/>
                 <label for="food4">Vegetarian</label>
             </div>
@@ -140,7 +139,7 @@
             <!--ALLERGIES-->
             <div class="row" id="food_allergies" th:hidden="true">
                 <h4>Allergies?</h4>
-                <input size="35em" type="text" id="allergies" title="allergies" name="allergies" th:value="${guest.getAllergies()}"/>
+                <input size="35em" type="text" id="allergies" maxlength="100" title="allergies" name="allergies" th:value="${guest.getAllergies()}"/>
             </div>
 
             <!--GUEST RELATED-->
@@ -182,7 +181,7 @@
                     <!--GUEST ALLERGIES-->
                     <div class="row" >
                         <h4>Guest Allergies?</h4>
-                        <input size="35em" type="text" id="guestAllergies" title="guestAllergies" name="guestAllergies" th:value="${guest.getGuestAllergies()}"/>
+                        <input size="35em" type="text" maxlength="100" id="guestAllergies" title="guestAllergies" name="guestAllergies" th:value="${guest.getGuestAllergies()}"/>
                     </div>
                 </div>
             </div>
@@ -203,7 +202,7 @@
             <div class="row" id="song_suggestion" th:hidden="true">
                 <h4>Song Suggestions?</h4>
                 <div class="answerInputs">
-                    <input size="35em" type="text" id="song" title="song" name="song" th:value="${guest.getSong()}" />
+                    <input size="35em" type="text" maxlength="100" id="song" title="song" name="song" th:value="${guest.getSong()}" />
                 </div>
             </div>
 
@@ -212,7 +211,7 @@
             <div class="row" id="email_confirmation" th:hidden="true">
                 <h4>Your Email: </h4>
                 <div>
-                    <input size="35em" type="email" name="email" title="email" id="email" th:value="${guest.getEmail()}"/>
+                    <input size="35em" type="email" maxlength="50" name="email" title="email" id="email" th:value="${guest.getEmail()}"/>
                 </div>
             </div>
 
