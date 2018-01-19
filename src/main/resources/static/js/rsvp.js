@@ -22,6 +22,7 @@ var email_confirmation = document.getElementById("email_confirmation");
 var song_suggestion = document.getElementById("song_suggestion");
 var bring_guest = document.getElementById("bring_guest");
 
+
 // Event listeners
 attendingYes.addEventListener("click", attendYes);
 attendingNo.addEventListener("click", attendNo);
@@ -30,7 +31,6 @@ roomBlockNo.addEventListener("click", blockNo);
 bringGuestYes.addEventListener("click", guestYes);
 bringGuestNo.addEventListener("click", guestNo);
 
-// Functions
 function attendYes() {
     attendingYes.style = "background-color: #4CAF50";
     attendingNo.style = "background-color: white";
@@ -80,3 +80,4 @@ function guestNo() {
     bringGuestAnswer.value = "No";
     guest_inputs.style.display = "none";
 }
+
